@@ -1,0 +1,15 @@
+.top-nav {
+  background-color: var(--black);
+  color: var(--white);
+  justify-content: space-between;
+  padding: 0px 20%;
+  height: 60px;
+}
+.top-nav > * {
+  align-items: center;
+  gap: 12px;
+}
+.main-nav {
+  height: 120px;
+  background-color: var(--dark-gray);
+}
