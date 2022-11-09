@@ -5,46 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/nav.css" /> -->
+    <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet" />
 
     <title>GameOn Blog</title>
   </head>
   <body>
     <nav>
       <div class="top-nav flex-row">
-        <div class="flex-row">
+        <div class="top-nav-icons flex-row">
           <a href="#"><img src="/images/facebook.svg" alt="facebook icon" /></a>
           <a href="#"><img src="/images/twitter.svg" alt="twitter icon" /></a>
           <a href="#"><img src="/images/instagram.svg" alt="instagram icon" /></a>
           <a href="#"><img src="/images/youtube.svg" alt="youtube icon" /></a>
         </div>
-        <div class="flex-row">
-          <div>left top-nav text</div>
-          <div>Send us a tip!</div>
+        <div class="top-nav-text flex-row">
+          <a>Send us a tip!</a>
+          <a>Send us a tip!</a>
         </div>
       </div>
-      <div class="main-nav flex-row">
-        <div class="flex-row">
+      <div class="nav flex-row">
+        <div class="nav-logo flex-row">
           <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
-          <div>
-            <div>GameOn Blog</div>
-            <div>Gaming News, Reviews, Guides and more</div>
+          <div class="flex-col">
+            <div class="nav-logo-toptext">GameOn Blog</div>
+            <div class="nav-logo-text">Gaming News, Reviews, Guides and more</div>
           </div>
         </div>
-        <div>
-          <a href="index.html">Home</a>
-          <a href="articles.html">Articles</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <div class="nav-menu flex-row">
+          <a class="nav-menu-index" href="index.html">Home</a>
+          <a class="nav-menu-articles href="articles.html">Articles</a>
+          <a class="nav-menu-about href="about.html">About</a>
+          <a class="nav-menu-contact href="contact.html">Contact</a>
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <h1>Test</h1>
+    </main>
     <footer>
-      <div>
-        <div>
+      <div class="footer flex-row">
+        <div class="footer-logo">
           <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
         </div>
-        <div>
+        <div class="footer-subscribe flex-col">
           <div>Stay Tuned!</div>
           <p>Be the first one to get updates on upcoming games, reviews and tutorials</p>
           <form action="#">
@@ -53,20 +58,20 @@
             <input type="submit" value="Subscribe" />
           </form>
         </div>
-        <div>
+        <div class="footer-icons flex-col">
           <a href="#"><img src="/images/facebook.svg" alt="facebook icon" />Facebook</a>
           <a href="#"><img src="/images/twitter.svg" alt="twitter icon" />Twitter</a>
           <a href="#"><img src="/images/instagram.svg" alt="instagram icon" />Instagram</a>
           <a href="#"><img src="/images/youtube.svg" alt="youtube icon" />YouTube</a>
         </div>
-        <div>
+        <div class="footer-nav flex-col">
           <a href="index.html">Home</a>
           <a href="articles.html">Articles</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <div>&copy; Daniel Dyrnes</div>
+      <div class="footer-copy">&copy; Daniel Dyrnes</div>
     </footer>
   </body>
 </html>
