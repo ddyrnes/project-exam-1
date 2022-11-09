@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <!-- <link rel="stylesheet" href="/css/nav.css" /> -->
+    <link rel="stylesheet" href="/css/index.css" />
     <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet" />
 
@@ -13,6 +13,7 @@
   </head>
   <body>
     <nav>
+      <div class="nav-background-top">
       <div class="top-nav flex-row">
         <div class="top-nav-icons flex-row">
           <a href="#"><img src="/images/facebook.svg" alt="facebook icon" /></a>
@@ -22,9 +23,10 @@
         </div>
         <div class="top-nav-text flex-row">
           <a>Send us a tip!</a>
-          <a>Send us a tip!</a>
         </div>
       </div>
+    </div>
+    <div class="nav-background-bottom">
       <div class="nav flex-row">
         <div class="nav-logo flex-row">
           <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
@@ -40,23 +42,30 @@
           <a class="nav-menu-contact href="contact.html">Contact</a>
         </div>
       </div>
+  </div>
     </nav>
     <main>
-      <h1>Test</h1>
+      <section class="splash flex-col">
+      <h1>Test Test</h1>
+      <h2>Another test</h2>
+      <p>Hello</p>
+      </section>
+
     </main>
     <footer>
+      <div class="footer-container">
       <div class="footer flex-row">
         <div class="footer-logo">
           <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
         </div>
         <div class="footer-line"></div>
         <div class="footer-subscribe flex-col">
-          <div>Stay Tuned!</div>
-          <p>Be the first one to get updates on upcoming games, reviews and tutorials</p>
-          <form action="#">
+          <p class="subscribe-header">Stay Tuned!</p>
+          <p class="subscribe-text">Be the first one to get updates on upcoming games, reviews and tutorials</p>
+          <form action="#" class="subscribe-form flex-row">
             <label for="email"></label>
             <input type="text" class="subscribe-email" name="subscribe-email" placeholder="Enter your email..." />
-            <input type="submit" value="Subscribe" />
+            <input type="button" value="Subscribe" class="subscribe-submit"/>
           </form>
         </div>
         <div class="footer-line"></div>
@@ -75,6 +84,7 @@
         </div>
       </div>
       <div class="footer-copy">&copy;Daniel Dyrnes</div>
+    </div>
     </footer>
   </body>
 </html>

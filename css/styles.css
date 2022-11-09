@@ -17,8 +17,16 @@
   --blue-gradient2: linear-gradient(301.58deg, #083dde 8.24%, #288bfd 81.76%);
 }
 body {
-  margin: 0;
+  margin: 0px;
   font-family: "Trebuchet MS", sans-serif;
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  padding: 0px 40px;
 }
 h1,
 h2,
