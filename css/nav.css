@@ -118,12 +118,20 @@ footer {
   height: 32px;
   border: none;
   padding: 4px 8px;
+  background-color: var(--white);
 }
 .subscribe-submit {
+  height: 40px;
   border: none;
+  cursor: pointer;
   width: 140px;
   text-align: center;
   background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
+}
+.subscribe-email:focus {
+  z-index: 1;
+  background-color: var(--white);
+  outline: 3px solid var(--black);
 }
 
 .footer-icons > * {
