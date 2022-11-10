@@ -1,9 +1,47 @@
-main {
+.splash-background {
+  background-color: var(--gray);
+  align-items: center;
+  padding: 0px 40px;
 }
 .splash {
   max-width: 1440px;
-  height: 50vh;
-  margin: auto;
+  width: 100%;
+
   align-items: center;
-  background-color: var(--light-blue);
+  background-color: var(--black);
+}
+.splash-img h1 {
+  background: rgba(81, 81, 81, 0.75);
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 12px;
+  font-size: 3rem;
+  color: var(--white);
+}
+.splash-img {
+  background-image: url(/images/splashresized.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.splash-subscribe {
+  width: 360px;
+  height: 20vh;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.splash-subscribe-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  margin: 8px;
+  font-weight: bold;
+}
+.splash-subscribe-text {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
