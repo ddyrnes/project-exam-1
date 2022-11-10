@@ -99,40 +99,6 @@ footer {
   width: 360px;
   align-items: center;
 }
-.subscribe-header,
-.subscribe-text,
-.subscribe-submit {
-  color: var(--white);
-}
-.subscribe-header {
-  font-size: 1.4rem;
-  text-align: center;
-}
-.subscribe-text {
-}
-.subscribe-form {
-  width: 360px;
-}
-.subscribe-email {
-  width: 220px;
-  height: 32px;
-  border: none;
-  padding: 4px 8px;
-  background-color: var(--white);
-}
-.subscribe-submit {
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  width: 140px;
-  text-align: center;
-  background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
-}
-.subscribe-email:focus {
-  z-index: 1;
-  background-color: var(--white);
-  outline: 3px solid var(--black);
-}
 
 .footer-icons > * {
   text-decoration: none;
