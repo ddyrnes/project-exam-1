@@ -75,7 +75,7 @@ footer {
   line-height: 64px;
 }
 /* Blue gradient background for current page */
-.nav-menu-index {
+.current-page {
   background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
 }
 

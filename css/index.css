@@ -10,10 +10,7 @@
   margin: auto;
   align-items: center;
 }
-.carousel-container,
-.index-cards-container {
-  padding: 0px 40px;
-}
+
 .splash {
   width: 100%;
   background-color: var(--black);

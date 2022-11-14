@@ -1,0 +1,32 @@
+section {
+  background-color: var(--white);
+  padding: 40px 80px;
+  max-width: 700px;
+  margin: 60px auto;
+  align-items: center;
+  gap: 20px;
+}
+.h1-container {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.h1-container img {
+  width: 60px;
+  height: 60px;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 2;
+}
+p {
+  font-size: 1.125rem;
+}
+.about-questions {
+  font-size: 1.225rem;
+}
+.questions-container {
+  max-width: 550px;
+}
