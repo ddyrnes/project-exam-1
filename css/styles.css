@@ -1,4 +1,5 @@
 @import url(nav.css);
+@import url(loader.css);
 @import url("https://fonts.cdnfonts.com/css/trebuchet-ms-2");
 @import url("https://fonts.cdnfonts.com/css/oswald-4");
 
@@ -13,9 +14,11 @@
   --blue: #1e73be;
   --blue-link: #2200cc;
   --placeholder: rgba(2, 5, 1, 0.65);
-  --blue-gradient1: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
-  --blue-gradient2: linear-gradient(301.58deg, #083dde 8.24%, #288bfd 81.76%);
 }
+/*  
+linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
+linear-gradient(301.58deg, #083dde 8.24%, #288bfd 81.76%); 
+*/
 body {
   margin: 0px;
   font-family: "Trebuchet MS", sans-serif;
