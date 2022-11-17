@@ -10,19 +10,40 @@ async function getPosts(url) {
     const response = await fetch(url);
     const posts = await response.json();
     for (let i = 0; i < posts.length; i++) {
-      if (i >= 5) {
+      if (i >= 3) {
         break;
       } else {
-        selectContainer.innerHTML += `<h2>${posts[i].title.rendered}</h2>`;
-        selectContainer.innerHTML += posts[i].content.rendered;
+        let newDate = new Date(posts[i].date);
+        let year = newDate.getFullYear();
+        let month = newDate.getMonth() + 1;
+        let date = newDate.getDate();
+
+        if (date < 10) {
+          date = "0" + dt;
+        }
+        if (month < 10) {
+          month = "0" + month;
+        }
+        selectContainer.innerHTML += `
+        <div>
+        <h2>${posts[i].title.rendered}</h2>
+        <img src="${posts[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+        <p class="${posts[i]._embedded["wp:term"][0][0].name}">${posts[i]._embedded["wp:term"][0][0].name}</p>
+        <p>By ${posts[i]._embedded.author[0].name}</p><p> ${year + "-" + month + "-" + date}</p>
+        </div>
+        `;
+
+        // selectContainer.innerHTML += posts[i].content.rendered;
         // console.log(posts[i]);
-        console.log(posts[i]._embedded.author[0].name);
-        console.log(posts[i]._embedded);
-        console.log(posts[i]._embedded["wp:term"][0][0].name);
-        console.log(posts[i].slug);
-        // console.log(posts[i].date);
+        // console.log(posts[i]._embedded.author[0].name);
+        // console.log(posts[i]._embedded);
+        // console.log(posts[i]._embedded["wp:term"][0][0].name);
+        // console.log(posts[i].slug);
+        // console.log(posts[i]._embedded["wp:featuredmedia"]["0"].source_url);
+        // console.log(posts[i]);
         // console.log(posts[i].title.rendered);
         // console.log(posts[i].excerpt.rendered);
+
         continue;
       }
     }

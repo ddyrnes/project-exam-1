@@ -7,6 +7,7 @@
   --white: #ffffff;
   --light-blue: #a4cff5;
   --green: #60af05;
+  --forest-green: #27998a;
   --gray: #d1d1d1;
   --light-gray: #eaeaea;
   --dark-gray: #515151;
@@ -19,6 +20,7 @@
 linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
 linear-gradient(301.58deg, #083dde 8.24%, #288bfd 81.76%); 
 */
+
 body {
   margin: 0px;
   font-family: "Trebuchet MS", sans-serif;

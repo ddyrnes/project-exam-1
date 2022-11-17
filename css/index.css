@@ -67,3 +67,15 @@
   flex-grow: 0;
   width: 80%;
 }
+img {
+  max-width: 300px;
+}
+.News {
+  background-color: var(--forest-green);
+}
+.Review {
+  background-color: var(--blue);
+}
+.Tutorial {
+  background-color: var(--green);
+}
