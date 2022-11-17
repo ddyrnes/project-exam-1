@@ -24,13 +24,14 @@ async function getPosts(url) {
         if (month < 10) {
           month = "0" + month;
         }
+        console.log(posts[i].id);
         selectContainer.innerHTML += `
-        <div>
+        <a href+"${posts[i].id}">
         <h2>${posts[i].title.rendered}</h2>
         <img src="${posts[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
         <p class="${posts[i]._embedded["wp:term"][0][0].name}">${posts[i]._embedded["wp:term"][0][0].name}</p>
         <p>By ${posts[i]._embedded.author[0].name}</p><p> ${year + "-" + month + "-" + date}</p>
-        </div>
+        </a>
         `;
 
         // selectContainer.innerHTML += posts[i].content.rendered;
