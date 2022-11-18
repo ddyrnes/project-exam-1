@@ -1,11 +1,14 @@
-export function newUrl() {
+// export function url() {
+//   const url = `https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=5`;
+// }
+export function url() {
   const baseUrl = `https://api.dd2.no/wp-json/wp/v2/posts?_embed`;
   let postPerPage = `&per_page=${arguments[0]}`;
   if (arguments[1]) {
     let category = `&categories=${arguments[1]}`;
-    return (newUrl = baseUrl + postPerPage + category);
+    return (url = baseUrl + postPerPage + category);
   } else {
-    return (newUrl = baseUrl + postPerPage);
+    return (url = baseUrl + postPerPage);
   }
 }
 // First number = number of posts
