@@ -1,0 +1,35 @@
+export function writeCard(apiResults, review) {
+  console.log(apiResults);
+  for (let i = 0; i < apiResults.length; i++) {
+    let newDate = new Date(apiResults[i].date);
+    let year = newDate.getFullYear();
+    let month = newDate.getMonth() + 1;
+    let date = newDate.getDate();
+    if (date < 10) {
+      date = "0" + dt;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+    let selectContainer = document.querySelector(`.${arguments[1]}-cards-container`);
+    selectContainer.innerHTML += `
+          <a href="${apiResults[i].id}" class="card flex-col">
+          <img src="${apiResults[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+          <div class="card-category ${apiResults[i]._embedded["wp:term"][0][0].name}"><p>${
+      apiResults[i]._embedded["wp:term"][0][0].name
+    }
+          </p></div>
+          <div class="card-text flex-col">
+          <h2>${apiResults[i].title.rendered}</h2>
+          <div class="card-short-summary">${apiResults[i].excerpt.rendered}</div>
+          <div class="card-info flex-row">
+          <div>
+          <p>By ${apiResults[i]._embedded.author[0].name}</p><p> ${year + "-" + month + "-" + date}</p>
+          </div>
+          <div class="card-link">Read More</div>
+          </div>
+          </div>
+          </a>
+          `;
+  }
+}
