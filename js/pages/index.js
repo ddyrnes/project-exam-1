@@ -7,9 +7,6 @@ async function getPosts(newUrl) {
     const response = await fetch(newUrl);
     const posts = await response.json();
     for (let i = 0; i < posts.length; i++) {
-      // if (i >= 5) {
-      //   break;
-      // } else {
       let newDate = new Date(posts[i].date);
       let year = newDate.getFullYear();
       let month = newDate.getMonth() + 1;
@@ -58,41 +55,13 @@ async function getPosts(newUrl) {
     console.log(error);
   }
 }
-getPosts(newUrl(3, 18));
+getPosts(newUrl(3, 19));
 
-// const baseUrl = `https://api.dd2.no/wp-json/wp/v2/posts?_embed`;
-// const categoryNews = `&categories=19`;
-// const categoryTutorials = `&categories=18`;
-// const categoryReviews = `&categories=17`;
-// const postPerPage = `&per_page=`;
-// const totalPosts = 0;
-// // let newUrl = baseUrl + categoryNews + postPerPage + 3;
-// function makeUrl(baseUrl, categoryNews, postPerPage, totalPosts) {
-//   let newUrl = baseUrl + categoryNews + postPerPage + totalPosts;
-//   return newUrl;
-// }
-// newUrl()
+// const nurl = `https://api.dd2.no/wp-json/wp/v2/categories`;
 
-// const baseUrl = `https://api.dd2.no/wp-json/wp/v2/posts?_embed`;
-// const categoryNews = `&categories=19`;
-// const categoryTutorials = `&categories=18`;
-// const categoryReviews = `&categories=17`;
-// const postPerPage = `&per_page=`;
-// const totalPosts = 0;
-// // let newUrl = baseUrl + categoryNews + postPerPage + 3;
-// function url ()
-
-// // News = 19
-// // Tutorials = 18
-// // Reviews = 17
-
-// async function getPost() {
-//   const response = await fetch(url);
+// async function getP(nurl) {
+//   const response = await fetch(newUrl);
 //   const posts = await response.json();
-//   for (let i = 0; i < posts.length; i++) {
-//     console.log(posts[i].id);
-//   }
+//   console.log(posts);
 // }
-// getPost(newUrl);
-
-// console.log(newUrl);
+// getP(nurl);
