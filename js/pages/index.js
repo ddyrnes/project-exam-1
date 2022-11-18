@@ -1,11 +1,14 @@
-import { url } from "../module/api.js";
 import { writeCard } from "../module/writecard.js";
 
+let url = `https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=`;
+let urlCategory = `&categories=`;
+
 Promise.all([
-  fetch("https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=3"),
-  fetch("https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=3&categories=17"),
-  fetch("https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=3&categories=18"),
-  fetch("https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=3&categories=19"),
+  fetch(url + "6"),
+  fetch(url + "3" + urlCategory + "17"),
+  fetch(url + "3" + urlCategory + "18"),
+  fetch(url + "3" + urlCategory + "19"),
+  // Categories: News = 19, Tutorials = 18, Reviews = 17
 ])
   .then(function (results) {
     return Promise.all(
@@ -15,14 +18,10 @@ Promise.all([
     );
   })
   .then(function (apiResults) {
-    let carousel = "carousel";
-    let review = "review";
-    let tutorial = "tutorial";
-    let news = "news";
-    writeCard(apiResults[0], carousel);
-    writeCard(apiResults[1], review);
-    writeCard(apiResults[2], tutorial);
-    writeCard(apiResults[3], news);
+    writeCard(apiResults[0], "carousel");
+    writeCard(apiResults[1], "review");
+    writeCard(apiResults[2], "tutorial");
+    writeCard(apiResults[3], "news");
   })
   .catch(function (error) {
     console.log(error);
