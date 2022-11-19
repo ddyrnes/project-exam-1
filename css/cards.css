@@ -32,9 +32,18 @@
   color: var(--white);
   text-align: center;
 }
-.card-short-summary {
+.card-short-summary p {
+  height: 75px;
   overflow: hidden;
-  height: 78px;
+  position: relative;
+}
+.card-short-summary p::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, var(--light-gray));
 }
 .card-text {
   padding: 0px 20px;
