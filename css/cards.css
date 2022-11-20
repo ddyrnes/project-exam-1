@@ -40,7 +40,7 @@
 .card-short-summary p::before {
   content: "";
   position: absolute;
-  height: 30px;
+  height: 20px;
   width: 100%;
   bottom: 0;
   background: linear-gradient(to bottom, transparent, var(--light-gray));

@@ -1,31 +1,16 @@
 import { writeCard } from "../module/writecard.js";
+import { makeApiCalls } from "../module/api.js";
+import { urlHomePage } from "../module/urls.js";
 
-let url = `https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=`;
-let urlCategory = `&categories=`;
-
-Promise.all([
-  fetch(url + "6"),
-  fetch(url + "3" + urlCategory + "17"),
-  fetch(url + "3" + urlCategory + "18"),
-  fetch(url + "3" + urlCategory + "19"),
-  // Categories: News = 19, Tutorials = 18, Reviews = 17
-])
-  .then(function (results) {
-    return Promise.all(
-      results.map(function (result) {
-        return result.json();
-      })
-    );
-  })
-  .then(function (apiResults) {
-    writeCard(apiResults[0], "carousel");
-    writeCard(apiResults[1], "review");
-    writeCard(apiResults[2], "tutorial");
-    writeCard(apiResults[3], "news");
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+const posts = await makeApiCalls(urlHomePage);
+async function writePosts(posts) {
+  writeCard(posts[0], "carousel");
+  writeCard(posts[1], "review");
+  writeCard(posts[2], "tutorial");
+  writeCard(posts[3], "news");
+  // "text" adds correct classes to pair with the posts categories
+}
+writePosts(posts);
 
 // for (let i = 0; i < posts.length; i++) {
 //     let newDate = new Date(posts[i].date);
@@ -159,3 +144,30 @@ Promise.all([
 // const dependencies = [test1(url(10, 17))];
 // const homepage = await Promise.all(dependencies);
 // console.log(homepage);
+
+// let url = `https://api.dd2.no/wp-json/wp/v2/posts?_embed&per_page=`;
+// let urlCategory = `&categories=`;
+
+// Promise.all([
+//   fetch(url + "6"),
+//   fetch(url + "3" + urlCategory + "17"),
+//   fetch(url + "3" + urlCategory + "18"),
+//   fetch(url + "3" + urlCategory + "19"),
+//   // Categories: News = 19, Tutorials = 18, Reviews = 17
+// ])
+//   .then(function (results) {
+//     return Promise.all(
+//       results.map(function (result) {
+//         return result.json();
+//       })
+//     );
+//   })
+//   .then(function (apiResults) {
+//     writeCard(apiResults[0], "carousel");
+//     writeCard(apiResults[1], "review");
+//     writeCard(apiResults[2], "tutorial");
+//     writeCard(apiResults[3], "news");
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });

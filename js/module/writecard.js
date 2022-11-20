@@ -1,5 +1,4 @@
 export function writeCard(apiResults, review) {
-  console.log(apiResults);
   for (let i = 0; i < apiResults.length; i++) {
     let newDate = new Date(apiResults[i].date);
     let year = newDate.getFullYear();
