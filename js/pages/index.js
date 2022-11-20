@@ -1,13 +1,13 @@
-import { writeCard } from "../module/writecard.js";
+import { cardInnerHtml } from "../module/cardInnerHtml.js";
 import { makeApiCalls } from "../module/api.js";
 import { urlHomePage } from "../module/urls.js";
 
 const posts = await makeApiCalls(urlHomePage);
 async function writePosts(posts) {
-  writeCard(posts[0], "carousel");
-  writeCard(posts[1], "review");
-  writeCard(posts[2], "tutorial");
-  writeCard(posts[3], "news");
+  cardInnerHtml(posts[0], "carousel");
+  cardInnerHtml(posts[1], "review");
+  cardInnerHtml(posts[2], "tutorial");
+  cardInnerHtml(posts[3], "news");
   // "text" adds correct classes to pair with the posts categories
 }
 writePosts(posts);
