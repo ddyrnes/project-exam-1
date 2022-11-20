@@ -12,7 +12,7 @@ export function cardInnerHtml(apiResults, review) {
     }
     let selectContainer = document.querySelector(`.${arguments[1]}-cards-container`);
     selectContainer.innerHTML += `
-          <a href="${apiResults[i].id}" class="card flex-col">
+          <a href="${apiResults[i].id}" class="card flex-col carousel-card">
           <img src="${apiResults[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
           <div class="card-category ${apiResults[i]._embedded["wp:term"][0][0].name}"><p>${
       apiResults[i]._embedded["wp:term"][0][0].name

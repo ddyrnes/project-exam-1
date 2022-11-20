@@ -1,4 +1,6 @@
 @import url(cards.css);
+@import url(carousel.css);
+
 .splash-background {
   background-color: var(--gray);
   align-items: center;
@@ -52,7 +54,12 @@
   font-size: 1.25rem;
   font-weight: 300;
 }
-
+.latest-articles {
+  background-color: var(--gray);
+  padding: 20px;
+  border-radius: 8px 8px 0px 0px;
+  margin: 0;
+}
 .carousel {
   background-color: var(--gray);
   width: 100%;

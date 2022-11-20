@@ -1,0 +1,40 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-container {
+  gap: 40px;
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 40px 60px;
+  background-color: var(--gray);
+}
+
+.carousel-button {
+  position: absolute;
+  padding: 0px 10px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  border: none;
+  font-size: 4rem;
+  line-height: 4rem;
+  cursor: pointer;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-button:hover,
+.carousel-button:focus {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-button:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#next-btn {
+  right: 0px;
+}
