@@ -1,32 +1,21 @@
-// const carouselContainer = document.querySelectorAll(".carousel-container");
-// const prevBtn = document.querySelectorAll(".prev-btn");
-// const nextBtn = document.querySelectorAll(".next-btn");
-
-// carouselContainer.forEach((item) => {
-//   let containerDimensions = item.getBoundingClientRect();
-//   let containerWidth = containerDimensions.width;
-
-//   nextBtn.addEventListener("click", () => {
-//     item.scrollLeft += containerWidth;
-//   });
-
-//   prevBtn.addEventListener("click", () => {
-//     item.scrollLeft -= containerWidth;
-//   });
-// });
 export function carousel() {
-  const slidesContainer = document.getElementById("carousel-container");
-  const slide = document.querySelector(".carousel-card");
-  const prevButton = document.getElementById("prev-btn");
-  const nextButton = document.getElementById("next-btn");
+  const carouselContainer = document.querySelector(".carousel-container");
+  const carousel = document.querySelector(".carousel");
+  const card = document.querySelector(".carousel-card");
+  const prevButton = document.querySelector("#prev-btn");
+  const nextButton = document.querySelector("#next-btn");
+  const cardWidth = (card.clientWidth + 40) * 2;
+  const carouselWidth = carousel.clientWidth;
+  console.log(carouselWidth);
   nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
+    // const cardWidth = card.clientWidth + 40;
+    carouselContainer.scrollLeft += cardWidth;
+    console.log(cardWidth);
   });
 
   prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
+    // const cardWidth = card.clientWidth;
+    carouselContainer.scrollLeft -= cardWidth;
+    console.log(cardWidth);
   });
 }
-// need fixing/altering

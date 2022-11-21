@@ -1,4 +1,5 @@
 .carousel {
+  padding: 40px 80px;
   position: relative;
   overflow: hidden;
 }
@@ -8,7 +9,6 @@
   overflow: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
-  padding: 40px 60px;
   background-color: var(--gray);
 }
 
@@ -37,4 +37,7 @@
 }
 #next-btn {
   right: 0px;
+}
+#prev-btn {
+  left: 0px;
 }

@@ -1,6 +1,10 @@
 @import url(cards.css);
 @import url(carousel.css);
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .splash-background {
   background-color: var(--gray);
   align-items: center;
