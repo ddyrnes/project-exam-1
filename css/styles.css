@@ -86,6 +86,7 @@ h4 {
 .subscribe-text,
 .subscribe-submit {
   color: var(--white);
+  font-size: 1.1rem;
 }
 .subscribe-header {
   font-size: 1.4rem;
@@ -97,7 +98,6 @@ h4 {
 } */
 .subscribe-email {
   width: 280px;
-  height: 32px;
   border: none;
   padding: 4px 8px;
   background-color: var(--white);

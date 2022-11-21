@@ -4,9 +4,8 @@ export function carousel() {
   const card = document.querySelector(".carousel-card");
   const prevButton = document.querySelector("#prev-btn");
   const nextButton = document.querySelector("#next-btn");
-  const cardWidth = (card.clientWidth + 40) * 2;
+  const cardWidth = (card.clientWidth + 40) * 3;
   const carouselWidth = carousel.clientWidth;
-  console.log(carouselWidth);
   nextButton.addEventListener("click", () => {
     // const cardWidth = card.clientWidth + 40;
     carouselContainer.scrollLeft += cardWidth;
