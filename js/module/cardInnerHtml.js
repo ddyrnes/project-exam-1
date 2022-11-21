@@ -5,7 +5,7 @@ export function cardInnerHtml(apiResults, review) {
     let month = newDate.getMonth() + 1;
     let date = newDate.getDate();
     if (date < 10) {
-      date = "0" + dt;
+      date = "0" + date;
     }
     if (month < 10) {
       month = "0" + month;
@@ -23,7 +23,9 @@ export function cardInnerHtml(apiResults, review) {
           <div class="card-short-summary">${apiResults[i].excerpt.rendered}</div>
           <div class="card-info flex-row">
           <div>
-          <p>By ${apiResults[i]._embedded.author[0].name}</p><p> ${year + "-" + month + "-" + date}</p>
+          <p class="card-author">By ${apiResults[i]._embedded.author[0].name}</p><p class="card-author"> ${
+      year + "-" + month + "-" + date
+    }</p>
           </div>
           <div class="card-link">Read More</div>
           </div>

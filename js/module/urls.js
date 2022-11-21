@@ -8,3 +8,5 @@ export const urlHomePage = [
   url + "3" + urlCategory + "19",
   // Categories: Reviews = 17, Tutorials = 18, News = 19
 ];
+
+// export const urlAllPosts = url + "100";

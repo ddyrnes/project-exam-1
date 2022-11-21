@@ -34,14 +34,14 @@
   text-align: center;
 }
 .card-short-summary p {
-  height: 75px;
+  height: 85px;
   overflow: hidden;
   position: relative;
 }
 .card-short-summary p::before {
   content: "";
   position: absolute;
-  height: 35px;
+  height: 45px;
   width: 100%;
   bottom: 0;
   background: linear-gradient(to bottom, transparent, var(--white));
@@ -55,7 +55,9 @@
   margin: 0px;
   margin-top: 10px;
   height: 60px;
-  text-align: center;
+}
+.card-author {
+  font-size: 0.9rem;
 }
 .card-info {
   width: 100%;
@@ -68,6 +70,5 @@
 .card-link {
   text-decoration: underline;
   color: var(--blue-link);
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.125rem;
 }
