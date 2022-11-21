@@ -15,9 +15,10 @@
   padding: 20px 0px;
   background-color: var(--gray);
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.carousel-container::-webkit-scrollbar {
+/* .carousel-container::-webkit-scrollbar {
   width: 20px;
 }
 
@@ -38,7 +39,7 @@
 }
 .carousel-container::-webkit-scrollbar-button {
   width: 220px;
-}
+} */
 
 .carousel-button {
   position: absolute;
