@@ -1,11 +1,13 @@
 h1 {
   font-size: 2.5rem;
+  margin: 40px 0px;
 }
 h3 {
   margin: 0;
 }
 main {
   margin: auto;
+  padding: 40px;
 }
 .category-title {
   font-size: 1.8rem;
@@ -17,7 +19,7 @@ main {
   background-color: var(--white);
 }
 .specific-article-header {
-  padding: 0px 80px;
+  padding: 0px 100px;
 }
 .specific-article-header p {
   margin: 10px 0px;
@@ -33,14 +35,15 @@ main {
 .specific-article img {
   width: 100%;
   height: auto;
+  padding: 0px 60px;
 }
 .specific-article h2 {
-  padding: 20px 80px;
+  padding: 20px 100px;
   margin: 0px;
 }
 
 .specific-article p {
-  padding: 10px 80px 30px 80px;
+  padding: 10px 100px 30px 100px;
   margin: 0;
 }
 .specific-article figcaption {
@@ -55,7 +58,7 @@ main {
   margin-left: 1px;
   width: 539px;
   background-color: var(--white);
-  padding: 60px;
+  padding: 40px 60px;
   align-items: center;
 }
 .subscribe-form {
@@ -85,4 +88,8 @@ main {
 }
 .subscribe {
   max-width: 320px;
+}
+.cta-container {
+  padding: 40px;
+  justify-content: center;
 }
