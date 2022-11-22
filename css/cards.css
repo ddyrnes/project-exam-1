@@ -72,3 +72,12 @@
   color: var(--blue-link);
   font-size: 1.125rem;
 }
+.News {
+  background-color: var(--forest-green);
+}
+.Review {
+  background-color: var(--blue);
+}
+.Tutorial {
+  background-color: var(--green);
+}

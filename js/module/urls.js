@@ -9,4 +9,5 @@ export const urlHomePage = [
   // Categories: Reviews = 17, Tutorials = 18, News = 19
 ];
 
-// export const urlAllPosts = url + "100";
+export const urlFirstPosts = [url + "9"];
+export const urlAllPosts = [url + "100"];

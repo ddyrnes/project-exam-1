@@ -1,3 +1,4 @@
+@import url(cards.css);
 .all-articles {
   background-color: var(--gray);
   align-items: center;
@@ -6,4 +7,7 @@
 
 .all-articles h2 {
   width: 600px;
+}
+.articles {
+  margin-top: 40px;
 }

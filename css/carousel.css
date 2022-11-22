@@ -55,15 +55,13 @@
   color: var(--white);
   background-color: rgba(0, 0, 0, 0.1);
 }
-.carousel-button:hover,
-.carousel-button:focus {
+.carousel-button:hover {
   color: var(--white);
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 5rem;
 }
 .carousel-button:focus {
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }
 #next-btn {
   right: 0px;
