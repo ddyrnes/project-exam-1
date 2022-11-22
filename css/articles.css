@@ -1,0 +1,9 @@
+.all-articles {
+  background-color: var(--gray);
+  align-items: center;
+  padding: 40px;
+}
+
+.all-articles h2 {
+  width: 600px;
+}

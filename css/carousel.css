@@ -4,7 +4,7 @@
   overflow: hidden;
   background-color: var(--gray);
   width: 1200px;
-  /* breakpoints: 2 cards 840px, 3cards 1200px*/
+  /* breakpoints: 1 card 480px, 2 cards 840px, 3cards 1200px*/
   border-radius: 8px;
 }
 .carousel-container {
