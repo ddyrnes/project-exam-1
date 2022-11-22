@@ -14,7 +14,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="/css/articles.css" />
+        <link rel="stylesheet" href="/css/cards.css" />
+        <link rel="stylesheet" href="/css/specific-article.css" />
         <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet" />
         <title>GameOn Blog | Articles</title>
@@ -46,15 +47,34 @@
               </div>
               <div class="nav-menu flex-row">
                 <a class="nav-menu-index" href="index.html">Home</a>
-                <a class="nav-menu-articles current-page" href="articles.html">Articles</a>
+                <a class="nav-menu-articles" href="articles.html">Articles</a>
                 <a class="nav-menu-about" href="about.html">About</a>
                 <a class="nav-menu-contact" href="contact.html">Contact</a>
               </div>
             </div>
           </div>
         </nav>
-        <main class="flex-col">
-          <section class="specific-article"></section>
+        <main class="flex-row">
+          <section class="article-container">
+            <div class="specific-article-header"></div>
+            <div class="specific-article"></div>
+          </section>
+          <aside class="related-articles flex-col">
+            <!-- <div class="subscribe splash-subscribe flex-col">
+              <p class="subscribe-header splash-subscribe-header">Stay Tuned!</p>
+              <p class="subscribe-text splash-subscribe-text">
+                Be the first one to get updates on upcoming games, reviews and tutorials
+              </p>
+              <form action="#" class="subscribe-form flex-row">
+                <label for="email"></label>
+                <input type="text" class="subscribe-email" name="subscribe-email" placeholder="Enter your email..." />
+                <input type="button" value="Subscribe" class="subscribe-submit" />
+              </form>
+            </div> -->
+            <div class="related-cards-container flex-col">
+              <h3>Related Articles</h3>
+            </div>
+          </aside>
         </main>
         <footer>
           <div class="footer-container">

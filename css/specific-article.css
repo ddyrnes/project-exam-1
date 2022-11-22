@@ -1,0 +1,88 @@
+h1 {
+  font-size: 2.5rem;
+}
+h3 {
+  margin: 0;
+}
+main {
+  margin: auto;
+}
+.category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.article-container {
+  max-width: 900px;
+  margin: 0px auto;
+  background-color: var(--white);
+}
+.specific-article-header {
+  padding: 0px 80px;
+}
+.specific-article-header p {
+  margin: 10px 0px;
+  font-size: 0.9rem;
+}
+.specific-article p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.specific-article figure {
+  margin: 0;
+}
+.specific-article img {
+  width: 100%;
+  height: auto;
+}
+.specific-article h2 {
+  padding: 20px 80px;
+  margin: 0px;
+}
+
+.specific-article p {
+  padding: 10px 80px 30px 80px;
+  margin: 0;
+}
+.specific-article figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Related Articles Testing  */
+
+.related-articles {
+  gap: 100px;
+  margin-left: 1px;
+  width: 539px;
+  background-color: var(--white);
+  padding: 60px;
+  align-items: center;
+}
+.subscribe-form {
+  justify-content: center;
+}
+.subscribe-header,
+.subscribe-text,
+.subscribe-submit {
+  color: var(--black);
+}
+
+.subscribe-email {
+  background-color: var(--black);
+}
+.subscribe-submit {
+  background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
+}
+.subscribe-email:focus {
+  z-index: 1;
+  background-color: var(--white);
+  outline: 3px solid var(--black);
+}
+
+.related-cards-container {
+  gap: 40px;
+  align-items: center;
+}
+.subscribe {
+  max-width: 320px;
+}

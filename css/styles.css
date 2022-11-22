@@ -127,6 +127,6 @@ p {
 }
 .subscribe-email:focus {
   z-index: 1;
-  background-color: var(--white);
+  background-color: var(--gray);
   outline: 3px solid var(--black);
 }
