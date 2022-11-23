@@ -1,6 +1,8 @@
 export async function createSpecificArticle(data) {
   const articleHeader = document.querySelector(".specific-article-header");
   const articleContent = document.querySelector(".specific-article");
+  const pageTitle = document.querySelector("title");
+  pageTitle.innerHTML += ` | ${data.title.rendered} (${data._embedded["wp:term"][0][0].name})`;
   let newDate = new Date(data.date);
   let year = newDate.getFullYear();
   let month = newDate.getMonth() + 1;
