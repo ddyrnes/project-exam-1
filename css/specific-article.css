@@ -10,12 +10,14 @@ main {
   padding: 40px;
 }
 .category-title {
-  font-size: 1.8rem;
-  font-weight: 600;
+  width: fit-content;
+  padding: 0px 40px;
+  border-radius: 8px;
 }
 .article-container {
   max-width: 900px;
   margin: 0px auto;
+  padding-bottom: 60px;
   background-color: var(--white);
 }
 .specific-article-header {

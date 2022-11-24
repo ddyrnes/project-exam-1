@@ -15,7 +15,7 @@ export async function createSpecificArticle(data) {
   }
   articleHeader.innerHTML = `
       <h1>${data.title.rendered}</h1>
-      <div class="category-title ${data._embedded["wp:term"][0][0].name}"><p>${
+      <div class="category-title card-category ${data._embedded["wp:term"][0][0].name}"><p>${
     data._embedded["wp:term"][0][0].name
   }</p></div>
       <p>By ${data._embedded.author[0].name} | ${year + "-" + month + "-" + date}</p>
