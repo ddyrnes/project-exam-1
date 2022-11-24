@@ -17,6 +17,7 @@ export const urlSpecificPage = [
 ];
 
 export const urlFirstPosts = [url + "9"];
+
 export const urlAllPosts = [url + "100"];
 
 export const specificUrl = `https://api.dd2.no/wp-json/wp/v2/posts/`;

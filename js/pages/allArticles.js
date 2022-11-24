@@ -13,7 +13,7 @@ writePosts();
 const allPosts = await makeApiCalls(urlAllPosts);
 const selectContainer = document.querySelector(`.all-cards-container`);
 const displayAll = document.getElementById("display-all");
-displayAll.addEventListener("click", () => {
+displayAll.addEventListener("click", (event) => {
   async function writePosts() {
     selectContainer.innerHTML = "";
     cardInnerHtml(allPosts[0], "all");

@@ -78,6 +78,15 @@
               <h3>Related Articles</h3>
             </div>
           </aside>
+          <div class="loader">
+            <div class="loader-inside flex-col">
+              <img src="/images/loadericon.png" alt="gameon logo" />
+              Loading
+            </div>
+            <div class="loader-box loader-1"></div>
+            <div class="loader-box loader-2"></div>
+            <div class="loader-box loader-3"></div>
+          </div>
         </main>
         <footer>
           <div class="footer-container">
@@ -113,6 +122,17 @@
             <div class="footer-copy">&copy;Daniel Dyrnes</div>
           </div>
         </footer>
+
+        <div id="root">
+          <button id="modal-open"></button>
+        </div>
+        <div id="modal-root">
+          <div class="modal flex-col">
+            <img src="" alt="" id="modal-img" />
+            <figcaption id="modal-figcap"></figcaption>
+          </div>
+        </div>
+
         <script src="/js/pages/specificArticle.js" type="module"></script>
       </body>
     </html>

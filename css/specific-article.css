@@ -36,6 +36,7 @@ main {
   width: 100%;
   height: auto;
   padding: 0px 60px;
+  cursor: zoom-in;
 }
 .specific-article h2 {
   padding: 20px 100px;
@@ -92,4 +93,53 @@ main {
 .cta-container {
   padding: 40px;
   justify-content: center;
+}
+
+/* Hides modal "button" */
+#modal {
+  display: none;
+}
+
+#modal-root {
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  cursor: zoom-out;
+  transition: opacity 0.2s ease-out, width 0s linear 0.2s, height 0s linear 0.2s;
+}
+
+#modal-root.visible {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+#modal-fig {
+  width: 100vh;
+  height: 100vh;
+}
+.modal {
+  padding: 40px;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#modal-figcap {
+  color: var(--white);
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 6px 20px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#modal-img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
 }
