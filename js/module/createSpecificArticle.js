@@ -21,4 +21,7 @@ export async function createSpecificArticle(data) {
       <p>By ${data._embedded.author[0].name} | ${year + "-" + month + "-" + date}</p>
       `;
   articleContent.innerHTML = data.content.rendered;
+  articleContent.innerHtml += `<div class="cta-container flex-row">
+  <a href="/articles.html" class="cta">All Articles</a>
+</div>`;
 }

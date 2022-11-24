@@ -9,6 +9,7 @@ const param = new URLSearchParams(window.location.search);
 const id = param.get("id");
 const newUrl = specificUrl + id + "?_embed";
 let categoryNumber;
+
 async function makeApiCall() {
   try {
     const response = await fetch(newUrl);
@@ -32,6 +33,7 @@ makeApiCall();
 
 const posts = await makeApiCalls(urlSpecificPage);
 async function writePosts() {
+  document.querySelector(".related-cards-container h3").innerHTML = "Related Articles";
   cardInnerHtml(posts[`${categoryNumber}`], "related", id);
   modal();
 }
