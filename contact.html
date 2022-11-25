@@ -58,30 +58,45 @@
             or make a guide about. We would love your input!
           </p>
         </div>
-        <div class="contact-form">
-          <form action="/contact.html" method="get" class="flex-col">
-            <h2>Contact Us</h2>
+        <div class="flex-col form-success"></div>
+        <form action="/contact.html" id="contact-form" method="get" class="contact-form flex-col">
+          <fieldset class="fieldset flex-col">
+            <legend>Contact Us</legend>
             <div>
               <label for="name">Full Name <span>(minimum 5 characters)</span></label>
-              <input type="text" id="name" name="name" placeholder="Enter your name..." />
+              <input type="text" id="name" name="name" placeholder="Example John Doe" minlength="5" required />
             </div>
             <div>
-              <label for="email">Email address</label>
-              <input type="text" id="email" name="email" placeholder="Enter your email..." />
+              <label for="email">Email address <span>(valid email adress)</span></label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required />
             </div>
             <div>
               <label for="subject">Subject <span>(minimum 15 characters)</span></label>
-              <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write here..."></textarea>
+              <textarea
+                name="subject"
+                id="subject"
+                cols="30"
+                rows="10"
+                placeholder="Write here..."
+                minlength="15"
+                required
+              ></textarea>
             </div>
             <div>
               <label for="message">Message <span>(minimum 25 characters)</span></label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Write here..."></textarea>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write here..."
+                minlength="25"
+                required
+              ></textarea>
             </div>
-            <div>
-              <input type="submit" value="Submit" class="cta" />
-            </div>
-          </form>
-        </div>
+            <button type="submit" value="Submit" class="cta submit-form" id="submit-form">Submit Form</button>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer>
@@ -118,5 +133,6 @@
         <div class="footer-copy">&copy;Daniel Dyrnes</div>
       </div>
     </footer>
+    <script src="/js/pages/contact.js" type="module"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .contact-form {
   background-color: var(--light-gray);
   margin: auto;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.25);
 }
 form {
@@ -14,6 +14,15 @@ form > * {
   flex-direction: column;
   gap: 4px;
   font-size: 1.2rem;
+}
+form > * > * {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.fieldset {
+  padding: 20px;
+  gap: 28px;
 }
 span {
   font-size: 0.8rem;
@@ -32,4 +41,47 @@ textarea {
 }
 #message {
   height: 120px;
+}
+.submit-form {
+  font-size: 1.2rem;
+  height: 40px;
+  text-transform: none;
+  font-weight: 400;
+}
+.success-icon {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--green);
+  text-align: center;
+  margin: auto;
+  border: 4px solid var(--green);
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 50%;
+}
+.form-success {
+  display: none;
+  max-width: 500px;
+  border: 4px solid var(--green);
+  border-radius: 8px;
+  padding: 40px 60px;
+}
+.form-success p {
+  padding: 0px;
+  margin: 12px 0px;
+  word-wrap: break-word;
+}
+.form-success-p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-success-cta-container {
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.form-success-cta {
+  width: 160px;
+  height: 40px;
+  font-size: 1rem;
 }
