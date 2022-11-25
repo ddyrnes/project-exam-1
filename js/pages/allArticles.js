@@ -4,9 +4,9 @@ import { urlAllPosts } from "../module/urls.js";
 import { urlFirstPosts } from "../module/urls.js";
 import { urlHomePage } from "../module/urls.js";
 
-let loader = document.querySelector(".loader");
-let displayAllButton = document.querySelector(".display-all-button");
-let displayHeader = document.querySelector(".all-articles");
+const loader = document.querySelector(".loader");
+const displayAllButton = document.querySelector(".display-all-button");
+const displayHeader = document.querySelector(".all-articles");
 
 const posts = await makeApiCalls(urlFirstPosts);
 async function writePosts() {

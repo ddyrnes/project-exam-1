@@ -8,6 +8,7 @@ h3 {
 main {
   margin: auto;
   padding: 40px;
+  justify-content: center;
 }
 .category-title {
   width: fit-content;
@@ -16,7 +17,6 @@ main {
 }
 .article-container {
   max-width: 900px;
-  margin: 0px auto;
   padding-bottom: 60px;
   background-color: var(--white);
 }
@@ -76,34 +76,12 @@ main {
   padding: 40px 60px;
   align-items: center;
 }
-.subscribe-form {
-  justify-content: center;
-}
-.subscribe-header,
-.subscribe-text,
-.subscribe-submit {
-  color: var(--black);
-}
-
-.subscribe-email {
-  background-color: var(--black);
-}
-.subscribe-submit {
-  background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
-}
-.subscribe-email:focus {
-  z-index: 1;
-  background-color: var(--white);
-  outline: 3px solid var(--black);
-}
 
 .related-cards-container {
   gap: 40px;
   align-items: center;
 }
-.subscribe {
-  max-width: 320px;
-}
+
 .cta-container {
   padding: 40px;
   justify-content: center;

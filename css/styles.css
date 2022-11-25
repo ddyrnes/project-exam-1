@@ -32,12 +32,10 @@ body {
   font-family: "Trebuchet MS", sans-serif;
   background-color: var(--light-gray);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 main {
   padding: 40px 0px;
+  min-height: 80vh;
 }
 h1,
 h2,
@@ -53,6 +51,10 @@ h3 {
 }
 p {
   font-size: 1.125rem;
+}
+.send-tip {
+  color: var(--white);
+  text-decoration: none;
 }
 .cta-container {
   padding-top: 40px;

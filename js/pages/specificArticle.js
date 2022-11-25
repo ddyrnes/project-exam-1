@@ -44,8 +44,8 @@ async function writePosts() {
   cardInnerHtml(posts[`${categoryNumber}`], "related", id);
   modal();
 }
-writePosts();
+// writePosts();
 
-// setTimeout(function () {
-//   writePosts();
-// }, 0);
+setTimeout(function () {
+  writePosts();
+}, 0);

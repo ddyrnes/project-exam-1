@@ -5,7 +5,7 @@
   align-items: center;
 }
 .loader {
-  margin: auto;
+  margin: 0px auto 140px;
   top: 100px;
   width: 250px;
   height: 250px;
