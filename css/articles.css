@@ -3,6 +3,7 @@
   background-color: var(--gray);
   align-items: center;
   padding: 40px;
+  display: none;
 }
 
 .all-articles h2 {
@@ -10,4 +11,9 @@
 }
 .articles {
   margin-top: 40px;
+}
+.display-all-button {
+  display: none;
+  height: 100px;
+  justify-content: center;
 }

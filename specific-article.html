@@ -4,63 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameOn Blog</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/cards.css" />
+    <link rel="stylesheet" href="/css/specific-article.css" />
+    <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet" />
+
+    <title>GameOn Blog | Articles</title>
+    <link rel="icon" type="image/x-icon" href="/images/gameonlogo.png" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="/css/cards.css" />
-        <link rel="stylesheet" href="/css/specific-article.css" />
-        <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet" />
-        <link href="https://fonts.cdnfonts.com/css/oswald-4" rel="stylesheet" />
-        <title>GameOn Blog | Articles</title>
-        <link rel="icon" type="image/x-icon" href="/images/gameonlogo.png" />
-      </head>
-      <body>
-        <nav>
-          <div class="nav-background-top">
-            <div class="top-nav flex-row">
-              <div class="top-nav-icons flex-row">
-                <a href="#"><img src="/images/facebook.svg" alt="facebook icon" /></a>
-                <a href="#"><img src="/images/twitter.svg" alt="twitter icon" /></a>
-                <a href="#"><img src="/images/instagram.svg" alt="instagram icon" /></a>
-                <a href="#"><img src="/images/youtube.svg" alt="youtube icon" /></a>
-              </div>
-              <div class="top-nav-text flex-row">
-                <a>Send us a tip!</a>
-              </div>
+    <nav>
+      <div class="nav-background-top">
+        <div class="top-nav flex-row">
+          <div class="top-nav-icons flex-row">
+            <a href="#"><img src="/images/facebook.svg" alt="facebook icon" /></a>
+            <a href="#"><img src="/images/twitter.svg" alt="twitter icon" /></a>
+            <a href="#"><img src="/images/instagram.svg" alt="instagram icon" /></a>
+            <a href="#"><img src="/images/youtube.svg" alt="youtube icon" /></a>
+          </div>
+          <div class="top-nav-text flex-row">
+            <a>Send us a tip!</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-background-bottom">
+        <div class="nav flex-row">
+          <div class="nav-logo flex-row">
+            <a href="index.html" rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
+            <div class="flex-col">
+              <div class="nav-logo-toptext">GameOn Blog</div>
+              <div class="nav-logo-text">Gaming News, Reviews, Guides and more</div>
             </div>
           </div>
-          <div class="nav-background-bottom">
-            <div class="nav flex-row">
-              <div class="nav-logo flex-row">
-                <a href="index.html" rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
-                <div class="flex-col">
-                  <div class="nav-logo-toptext">GameOn Blog</div>
-                  <div class="nav-logo-text">Gaming News, Reviews, Guides and more</div>
-                </div>
-              </div>
-              <div class="nav-menu flex-row">
-                <a class="nav-menu-index" href="index.html">Home</a>
-                <a class="nav-menu-articles" href="articles.html">Articles</a>
-                <a class="nav-menu-about" href="about.html">About</a>
-                <a class="nav-menu-contact" href="contact.html">Contact</a>
-              </div>
-            </div>
+          <div class="nav-menu flex-row">
+            <a class="nav-menu-index" href="index.html">Home</a>
+            <a class="nav-menu-articles" href="articles.html">Articles</a>
+            <a class="nav-menu-about" href="about.html">About</a>
+            <a class="nav-menu-contact" href="contact.html">Contact</a>
           </div>
-        </nav>
-        <main class="flex-row">
-          <section class="article-container">
-            <div class="specific-article-header"></div>
-            <div class="specific-article"></div>
-          </section>
-          <aside class="related-articles flex-col">
-            <!-- <div class="subscribe splash-subscribe flex-col">
+        </div>
+      </div>
+    </nav>
+    <main class="flex-row">
+      <section class="article-container">
+        <div class="specific-article-header"></div>
+        <div class="specific-article"></div>
+      </section>
+      <aside class="related-articles flex-col">
+        <!-- <div class="subscribe splash-subscribe flex-col">
               <p class="subscribe-header splash-subscribe-header">Stay Tuned!</p>
               <p class="subscribe-text splash-subscribe-text">
                 Be the first one to get updates on upcoming games, reviews and tutorials
@@ -71,67 +63,65 @@
                 <input type="button" value="Subscribe" class="subscribe-submit" />
               </form>
             </div> -->
-            <div class="related-cards-container flex-col">
-              <h3></h3>
-            </div>
-          </aside>
-          <div class="loader">
-            <div class="loader-inside flex-col">
-              <img src="/images/loadericon.png" alt="gameon logo" />
-              Loading
-            </div>
-            <div class="loader-box loader-1"></div>
-            <div class="loader-box loader-2"></div>
-            <div class="loader-box loader-3"></div>
-          </div>
-        </main>
-        <footer>
-          <div class="footer-container">
-            <div class="footer flex-row">
-              <div class="footer-logo">
-                <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
-              </div>
-              <div class="footer-line"></div>
-              <div class="footer-subscribe flex-col">
-                <p class="subscribe-header">Stay Tuned!</p>
-                <p class="subscribe-text">Be the first one to get updates on upcoming games, reviews and tutorials</p>
-                <form action="#" class="subscribe-form flex-row">
-                  <label for="email"></label>
-                  <input type="text" class="subscribe-email" name="subscribe-email" placeholder="Enter your email..." />
-                  <input type="button" value="Subscribe" class="subscribe-submit" />
-                </form>
-              </div>
-              <div class="footer-line"></div>
-              <div class="footer-icons flex-col">
-                <a href="#"><img src="/images/facebook.svg" alt="facebook icon" />Facebook</a>
-                <a href="#"><img src="/images/twitter.svg" alt="twitter icon" />Twitter</a>
-                <a href="#"><img src="/images/instagram.svg" alt="instagram icon" />Instagram</a>
-                <a href="#"><img src="/images/youtube.svg" alt="youtube icon" />YouTube</a>
-              </div>
-              <div class="footer-line"></div>
-              <div class="footer-nav flex-col">
-                <a href="index.html">Home</a>
-                <a href="articles.html">Articles</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-              </div>
-            </div>
-            <div class="footer-copy">&copy;Daniel Dyrnes</div>
-          </div>
-        </footer>
-
-        <div id="root">
-          <button id="modal-open"></button>
+        <div class="related-cards-container flex-col">
+          <h3></h3>
         </div>
-        <div id="modal-root">
-          <div class="modal flex-col">
-            <img src="" alt="" id="modal-img" />
-            <figcaption id="modal-figcap"></figcaption>
+      </aside>
+      <div class="loader">
+        <div class="loader-inside flex-col">
+          <img src="/images/loadericon.png" alt="gameon logo" />
+          Loading
+        </div>
+        <div class="loader-box loader-1"></div>
+        <div class="loader-box loader-2"></div>
+        <div class="loader-box loader-3"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer flex-row">
+          <div class="footer-logo">
+            <a rel="index.html"><img src="/images/gameonlogo.png" alt="GameOn Logo" /></a>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-subscribe flex-col">
+            <p class="subscribe-header">Stay Tuned!</p>
+            <p class="subscribe-text">Be the first one to get updates on upcoming games, reviews and tutorials</p>
+            <form action="#" class="subscribe-form flex-row">
+              <label for="email"></label>
+              <input type="text" class="subscribe-email" name="subscribe-email" placeholder="Enter your email..." />
+              <input type="button" value="Subscribe" class="subscribe-submit" />
+            </form>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-icons flex-col">
+            <a href="#"><img src="/images/facebook.svg" alt="facebook icon" />Facebook</a>
+            <a href="#"><img src="/images/twitter.svg" alt="twitter icon" />Twitter</a>
+            <a href="#"><img src="/images/instagram.svg" alt="instagram icon" />Instagram</a>
+            <a href="#"><img src="/images/youtube.svg" alt="youtube icon" />YouTube</a>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-nav flex-col">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
+        <div class="footer-copy">&copy;Daniel Dyrnes</div>
+      </div>
+    </footer>
 
-        <script src="/js/pages/specificArticle.js" type="module"></script>
-      </body>
-    </html>
+    <div id="root">
+      <button id="modal-open"></button>
+    </div>
+    <div id="modal-root">
+      <div class="modal flex-col">
+        <img src="" alt="" id="modal-img" />
+        <figcaption id="modal-figcap"></figcaption>
+      </div>
+    </div>
+
+    <script src="/js/pages/specificArticle.js" type="module"></script>
   </body>
 </html>

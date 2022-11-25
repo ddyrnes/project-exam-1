@@ -10,12 +10,20 @@ const id = param.get("id");
 const newUrl = specificUrl + id + "?_embed";
 let categoryNumber;
 
+const articleContainer = document.querySelector(".article-container");
+const asideContainer = document.querySelector(".related-articles");
+articleContainer.style.display = "none";
+asideContainer.style.display = "none";
+
 async function makeApiCall() {
   try {
     const response = await fetch(newUrl);
     const data = await response.json();
     createSpecificArticle(data);
     loader.style.display = "none";
+    articleContainer.style.display = "block";
+    asideContainer.style.display = "flex";
+
     if (data.categories[0] === 17) {
       return (categoryNumber = 1);
     }
@@ -30,12 +38,14 @@ async function makeApiCall() {
   }
 }
 makeApiCall();
-
 const posts = await makeApiCalls(urlSpecificPage);
 async function writePosts() {
   document.querySelector(".related-cards-container h3").innerHTML = "Related Articles";
   cardInnerHtml(posts[`${categoryNumber}`], "related", id);
   modal();
 }
-
 writePosts();
+
+// setTimeout(function () {
+//   writePosts();
+// }, 0);

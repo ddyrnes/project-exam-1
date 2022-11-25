@@ -1,12 +1,18 @@
 export async function modal() {
   const imgContainer = document.querySelector(".article-container");
   const img = imgContainer.querySelectorAll("img");
-  let modalRoot = document.getElementById("modal-root");
+  const figure = imgContainer.querySelectorAll("figure");
+  const modalRoot = document.getElementById("modal-root");
 
+  figure.forEach((figure) => {
+    figure.innerHTML += `
+    <img src="/images/zoom-inn.png" alt="" id="zoom">
+    `;
+  });
   modalRoot.addEventListener("click", rootClick);
 
-  img.forEach((img) => {
-    img.addEventListener("click", (e) => {
+  figure.forEach((figure) => {
+    figure.addEventListener("click", (e) => {
       modalRoot.classList.add("visible");
       document.querySelector("#modal-img").src = e.target.src;
       document.querySelector("#modal-figcap").innerHTML = e.target.alt;
@@ -15,6 +21,5 @@ export async function modal() {
 
   function rootClick() {
     modalRoot.classList.remove("visible");
-    console.log("remove visible");
   }
 }
