@@ -28,6 +28,7 @@ footer {
   gap: 16px;
   min-width: 250px;
 }
+
 .top-nav-text {
   justify-content: end;
 }
@@ -39,6 +40,7 @@ footer {
 .nav {
   height: 120px;
   background-color: var(--dark-gray);
+  position: relative;
 }
 .nav > * {
   align-items: center;
@@ -62,27 +64,49 @@ footer {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
-
 .nav-menu {
-  border: 1px solid var(--black);
+  /* border: 2px solid black; */
 }
-
 .nav-menu > * {
   height: 50px;
   color: var(--white);
   text-decoration: none;
   padding: 0px 32px;
   font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 50px;
 }
 /* Blue gradient background for current page */
 .current-page {
-  background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
+  /* background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%); */
+  text-decoration: underline solid 4px;
+}
+.nav-menu a:hover {
+  background: var(--gray);
+  color: var(--black);
+}
+.nav-menu.active {
+  display: flex;
 }
 
+.hamburger-toggle {
+  flex-direction: column;
+  justify-content: space-between;
+  right: 0px;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  display: none;
+  margin: 20px;
+}
+.hamburger-bar {
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  background-color: var(--white);
+}
 footer {
   height: 300px;
 }

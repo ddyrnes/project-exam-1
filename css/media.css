@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+  .hamburger-toggle {
+    display: flex;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 20px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .nav-menu a {
+    margin: 4px;
+    width: 100%;
+    text-align: center;
+  }
+}
