@@ -12,7 +12,7 @@ footer {
 
 .top-nav,
 .nav,
-.footer-container {
+.footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
@@ -115,6 +115,7 @@ footer {
   color: var(--white);
   height: 30px;
   line-height: 30px;
+  width: 100%;
 }
 .footer {
   align-items: center;
