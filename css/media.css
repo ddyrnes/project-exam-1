@@ -1,4 +1,7 @@
+/* MEDIA > 1200 PX */
 @media (max-width: 1200px) {
+  /* Top Navigation */
+
   .hamburger-toggle {
     display: flex;
   }
@@ -6,7 +9,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
-    padding: 20px;
+    padding: 20px 0px;
   }
   .nav-menu {
     display: none;
@@ -19,5 +22,53 @@
     margin: 4px;
     width: 100%;
     text-align: center;
+  }
+
+  .carousel {
+    width: 840px;
+  }
+
+  /* Footer  */
+  footer {
+    height: 100%;
+    padding: 0px;
+  }
+  .footer {
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .footer > * {
+    padding: 30px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-logo {
+    display: none;
+  }
+}
+
+/* MEDIA > 840 PX  */
+@media (max-width: 840px) {
+  .card {
+    width: 280px;
+  }
+  .card img {
+    width: 280px;
+  }
+  .carousel-section {
+    padding: 0px;
+  }
+  .carousel-container {
+    overflow-x: scroll;
+    gap: 24px;
+  }
+  .carousel {
+    width: 100%;
+    padding: 40px 24px;
+  }
+  .carousel-button {
+    display: none;
   }
 }

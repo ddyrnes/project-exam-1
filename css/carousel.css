@@ -17,30 +17,6 @@
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
-/* .carousel-container::-webkit-scrollbar {
-  width: 20px;
-}
-
-.carousel-container::-webkit-scrollbar-track {
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.carousel-container::-webkit-scrollbar-thumb {
-  background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%);
-  border-radius: 10px;
-  border: 4px solid rgba(0, 0, 0, 0);
-  background-clip: padding-box;
-}
-
-.carousel-container::-webkit-scrollbar-thumb:hover {
-  border: 1px solid black;
-}
-.carousel-container::-webkit-scrollbar-button {
-  width: 220px;
-} */
-
 .carousel-button {
   position: absolute;
   padding: 0px 10px;

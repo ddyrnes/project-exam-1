@@ -22,3 +22,7 @@ async function writePosts() {
   // calling carousel function after cards has loaded from api
 }
 writePosts();
+
+window.onresize = function () {
+  carousel();
+};
