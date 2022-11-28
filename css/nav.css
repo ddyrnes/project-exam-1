@@ -1,3 +1,7 @@
+nav {
+  position: sticky;
+  top: 0;
+}
 .nav-background-top {
   background-color: var(--black);
 }
@@ -62,9 +66,6 @@ footer {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
-.nav-menu {
-  /* border: 2px solid black; */
-}
 .nav-menu > * {
   height: 50px;
   color: var(--white);
@@ -87,6 +88,10 @@ footer {
 }
 .nav-menu.active {
   display: flex;
+  position: sticky;
+  top: 124px;
+  left: 0;
+  background-color: var(--dark-gray);
 }
 
 .hamburger-toggle {
@@ -98,6 +103,13 @@ footer {
   height: 40px;
   display: none;
   margin: 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 .hamburger-bar {
   border-radius: 10px;

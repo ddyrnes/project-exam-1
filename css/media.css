@@ -5,11 +5,23 @@
   .hamburger-toggle {
     display: flex;
   }
+  nav {
+    z-index: 2;
+    position: sticky;
+    width: 100%;
+  }
   .nav {
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
     padding: 20px 0px;
+    position: sticky;
+  }
+  .nav-background-bottom {
+    z-index: 2;
+    position: sticky;
+    width: 100%;
+    top: 0;
   }
   .nav-menu {
     display: none;
@@ -42,13 +54,21 @@
     justify-content: center;
   }
   .footer > * {
-    padding: 30px;
+    padding: 20px 24px;
   }
   .footer-line {
     display: none;
   }
   .footer-logo {
     display: none;
+  }
+  /* Specific Article  */
+  .specific-article-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .specific-article-container > * {
+    margin: auto;
   }
 }
 
@@ -76,5 +96,12 @@
   }
   .carousel-button {
     display: none;
+  }
+  .footer-subscribe {
+    margin: 20px 180px;
+  }
+  #zoom {
+    width: 34px;
+    height: 34px;
   }
 }

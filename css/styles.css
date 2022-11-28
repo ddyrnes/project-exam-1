@@ -58,7 +58,9 @@ p {
   text-decoration: none;
 }
 .cta-container {
-  padding-top: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 .cta {
   background: linear-gradient(32.38deg, #0830b6 13.43%, #2178d6 86.72%);

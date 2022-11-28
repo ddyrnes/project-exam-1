@@ -37,15 +37,16 @@ async function makeApiCall() {
     console.log(error);
   }
 }
-makeApiCall();
+
 const posts = await makeApiCalls(urlSpecificPage);
 async function writePosts() {
   document.querySelector(".related-cards-container h3").innerHTML = "Related Articles";
   cardInnerHtml(posts[`${categoryNumber}`], "related", id);
   modal();
 }
-// writePosts();
 
-setTimeout(function () {
-  writePosts();
-}, 0);
+async function setupPage() {
+  await makeApiCall();
+  await writePosts();
+}
+setupPage();

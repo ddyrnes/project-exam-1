@@ -6,7 +6,7 @@ export async function modal() {
 
   figure.forEach((figure) => {
     figure.innerHTML += `
-    <img src="/images/zoom-inn.png" alt="modal-zoom-inn" id="zoom">
+    <div id="zoom"></div>
     `;
   });
   modalRoot.addEventListener("click", rootClick);
