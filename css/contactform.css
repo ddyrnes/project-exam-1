@@ -20,11 +20,14 @@ form > * > * {
   gap: 4px;
 }
 .fieldset {
-  padding: 20px 40px;
+  padding: 40px 80px;
   gap: 28px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
 }
 legend {
   font-size: 1.5rem;
+  padding: 20px;
 }
 span {
   font-size: 0.8rem;

@@ -1,5 +1,5 @@
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
 }
 .nav-background-top {
@@ -22,6 +22,11 @@ footer {
   max-width: 1440px;
   margin: auto;
 }
+.navBarSticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .top-nav {
   color: var(--white);
   height: 40px;
@@ -30,7 +35,6 @@ footer {
   align-items: center;
   gap: 16px;
 }
-
 .top-nav-text {
   justify-content: end;
 }
@@ -88,10 +92,6 @@ footer {
 }
 .nav-menu.active {
   display: flex;
-  position: sticky;
-  top: 124px;
-  left: 0;
-  background-color: var(--dark-gray);
 }
 
 .hamburger-toggle {
@@ -113,8 +113,8 @@ footer {
 }
 .hamburger-bar {
   border-radius: 10px;
-  height: 5px;
-  width: 100%;
+  height: 4px;
+  width: 80%;
   background-color: var(--white);
 }
 footer {

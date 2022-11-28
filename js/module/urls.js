@@ -6,16 +6,14 @@ export const urlHomePage = [
   url + "3" + urlCategory + "17",
   url + "3" + urlCategory + "18",
   url + "3" + urlCategory + "19",
-  // Categories: Reviews = 17, Tutorials = 18, News = 19
 ];
 export const urlSpecificPage = [
   url + "12",
-  url + "4" + urlCategory + "17",
-  url + "4" + urlCategory + "18",
-  url + "4" + urlCategory + "19",
-  // Categories: Reviews = 17, Tutorials = 18, News = 19
+  url + "3" + urlCategory + "17",
+  url + "3" + urlCategory + "18",
+  url + "3" + urlCategory + "19",
 ];
-
+// Categories: Reviews = 17, Tutorials = 18, News = 19
 export const urlFirstPosts = [url + "9"];
 
 export const urlAllPosts = [url + "100"];

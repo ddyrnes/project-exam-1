@@ -87,6 +87,7 @@
   .cards-container {
     width: 100%;
     overflow: scroll;
+    overflow-y: hidden;
     flex-wrap: nowrap;
     justify-content: flex-start;
   }

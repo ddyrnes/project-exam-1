@@ -20,7 +20,6 @@
 .carousel-button {
   position: absolute;
   padding: 0px 10px;
-  z-index: 2;
   top: 50%;
   transform: translateY(-50%);
   height: 100%;

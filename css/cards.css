@@ -36,18 +36,12 @@
   text-align: center;
 }
 .card-short-summary p {
-  height: 85px;
+  display: -webkit-box;
   overflow: hidden;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
-.card-short-summary p::before {
-  content: "";
-  position: absolute;
-  height: 45px;
-  width: 100%;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--white));
-}
+
 .card-text {
   padding: 0px 20px;
   gap: 20px;
