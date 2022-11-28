@@ -3,6 +3,7 @@ import { makeApiCalls } from "../module/api.js";
 import { urlAllPosts } from "../module/urls.js";
 import { urlFirstPosts } from "../module/urls.js";
 import { urlHomePage } from "../module/urls.js";
+import { filterCategories } from "../module/categoryfilter.js";
 
 const loader = document.querySelector(".loader");
 const displayAllButton = document.querySelector(".display-all-button");
@@ -16,6 +17,7 @@ async function writePosts() {
   displayHeader.style.display = "flex";
 }
 writePosts();
+
 const allPosts = await makeApiCalls(urlAllPosts);
 const selectContainer = document.querySelector(`.all-cards-container`);
 const displayAll = document.getElementById("display-all");
@@ -27,3 +29,4 @@ displayAll.addEventListener("click", (event) => {
   }
   writePosts();
 });
+filterCategories();

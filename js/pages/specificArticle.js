@@ -48,5 +48,5 @@ async function writePosts() {
 async function setupPage() {
   await makeApiCall();
   await writePosts();
+  await setupPage();
 }
-setupPage();
