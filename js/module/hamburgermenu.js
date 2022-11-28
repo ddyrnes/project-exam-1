@@ -15,3 +15,14 @@ function navbartop() {
   }
 }
 window.addEventListener("scroll", navbartop);
+
+let scrollPosition = window.pageYOffset;
+window.onscroll = function () {
+  let updatedScrollPosition = window.pageYOffset;
+  if (scrollPosition > updatedScrollPosition) {
+    navBarSticky.style.top = "0";
+  } else {
+    navBarSticky.style.top = "-150px";
+  }
+  scrollPosition = updatedScrollPosition;
+};
