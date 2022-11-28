@@ -27,6 +27,9 @@
   .carousel {
     width: 840px;
   }
+  .h3-container {
+    width: 90%;
+  }
 
   /* Footer  */
   footer {
@@ -56,6 +59,9 @@
   }
   .card img {
     width: 280px;
+  }
+  .index-line {
+    display: none;
   }
   .carousel-section {
     padding: 0px;
