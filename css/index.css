@@ -22,6 +22,7 @@
 .splash-img h1 {
   background: rgba(81, 81, 81, 0.75);
   width: fit-content;
+  text-align: center;
   height: fit-content;
   padding: 8px 12px;
   font-size: 3rem;

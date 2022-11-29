@@ -8,6 +8,7 @@ import { filterCategories } from "../module/categoryfilter.js";
 const loader = document.querySelector(".loader");
 const displayAllButton = document.querySelector(".display-all-button");
 const displayHeader = document.querySelector(".all-articles");
+const categoryRadio = document.querySelector(".category-radio");
 
 const posts = await makeApiCalls(urlFirstPosts);
 async function writePosts() {
@@ -15,6 +16,7 @@ async function writePosts() {
   loader.style.display = "none";
   displayAllButton.style.display = "flex";
   displayHeader.style.display = "flex";
+  categoryRadio.style.display = "block";
 }
 writePosts();
 
