@@ -15,7 +15,7 @@ export function filterCategories() {
   const tutorialCard = document.querySelectorAll(".Tutorial");
   // console.log(buttons);
   const allCards = document.querySelectorAll(".all-cards-container a");
-
+  allButton.checked = "true";
   buttons.forEach((e) => {
     e.addEventListener("change", function (event) {
       let item = event.target.value;

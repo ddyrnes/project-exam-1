@@ -175,6 +175,9 @@
   .carousel-button {
     display: none;
   }
+  .category-radio {
+    padding: 20px;
+  }
 
   .specific-article-header,
   .specific-article p {

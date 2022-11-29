@@ -16,7 +16,7 @@ async function writePosts() {
   loader.style.display = "none";
   displayAllButton.style.display = "flex";
   displayHeader.style.display = "flex";
-  categoryRadio.style.display = "block";
+  categoryRadio.style.display = "flex";
 }
 writePosts();
 
