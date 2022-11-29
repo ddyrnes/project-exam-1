@@ -100,9 +100,9 @@ footer {
   right: 0px;
   position: absolute;
   width: 60px;
-  height: 40px;
+  height: 30px;
   display: none;
-  margin: 20px;
+  margin: 20px 0px;
   background: none;
   color: inherit;
   border: none;

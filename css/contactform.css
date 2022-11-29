@@ -68,14 +68,15 @@ textarea {
   border-radius: 8px;
   padding: 40px 60px;
 }
+
 .form-success p {
   padding: 0px;
   margin: 12px 0px;
   word-wrap: break-word;
 }
 .form-success-p {
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 1.2rem;
 }
 
 .form-success-cta-container {

@@ -13,7 +13,9 @@
   margin: auto;
   align-items: center;
 }
-
+.index-main {
+  padding: 0px;
+}
 .splash {
   width: 100%;
   background-color: var(--black);

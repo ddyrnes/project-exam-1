@@ -6,6 +6,7 @@ toggle.addEventListener("click", () => {
 });
 
 const navBarSticky = document.getElementsByClassName("nav-background-bottom")[0];
+// const navBarSticky = document.querySelector("nav");
 let navBarTop = navBarSticky.offsetTop;
 function navbartop() {
   if (window.scrollY >= navBarTop && window.innerWidth <= 1200) {

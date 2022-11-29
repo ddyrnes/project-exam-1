@@ -39,7 +39,6 @@ async function makeApiCall() {
 
 const posts = await makeApiCalls(urlSpecificPage);
 async function writePosts() {
-  document.querySelector(".related-cards-container h3").innerHTML = "Related Articles";
   cardInnerHtml(posts[`${categoryNumber}`], "related", id);
   modal();
 }
