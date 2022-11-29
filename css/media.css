@@ -78,7 +78,7 @@
   /* Specific Article  */
   .specific-article-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
   .specific-article-container > * {
     margin: auto;
@@ -91,7 +91,8 @@
 /* MEDIA > 840 PX  */
 @media (max-width: 840px) {
   main {
-    margin-top: 130px;
+    margin-top: 170px;
+    padding: 0;
   }
   .nav-background-bottom,
   .nav-background-top {
@@ -103,7 +104,8 @@
   .splash-img {
     height: 40vh;
   }
-  .splash-img h1 {
+  .splash-img h1,
+  h1 {
     font-size: 2rem;
   }
   .splash-subscribe {
@@ -112,11 +114,27 @@
   .subscribe-submit {
     width: 150px;
   }
+  .latest-articles {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   .card {
     width: 280px;
+    height: 520px;
   }
   .card img {
     width: 280px;
+  }
+  /* .card-short-summary {
+    display: none;
+  } */
+  .card-text h2 {
+    height: 30px;
+  }
+  .card-short-summary p {
+    -webkit-line-clamp: 1;
   }
   .index-line {
     display: none;
@@ -130,17 +148,35 @@
   }
   .carousel {
     width: 100%;
-    padding: 40px 24px;
+    padding: 10px 24px;
   }
   .carousel-button {
     display: none;
   }
-  .footer-subscribe {
-    margin: 20px 180px;
+
+  .specific-article-header,
+  .specific-article p {
+    padding: 0px 20px;
+  }
+  .specific-article h2 {
+    padding: 20px;
+  }
+  .specific-article figure {
+    margin: 20px;
+  }
+
+  #modal-img {
+    max-width: 100%;
+  }
+  .modal {
+    padding: 0px;
   }
   #zoom {
     width: 34px;
     height: 34px;
+  }
+  .related-articles {
+    max-width: 375px;
   }
   .fieldset {
     padding: 10px 20px;
@@ -170,5 +206,8 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  .footer-subscribe {
+    margin: 20px 180px;
   }
 }

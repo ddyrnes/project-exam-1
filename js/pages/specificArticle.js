@@ -9,7 +9,6 @@ const param = new URLSearchParams(window.location.search);
 const id = param.get("id");
 const newUrl = specificUrl + id + "?_embed";
 let categoryNumber;
-
 const articleContainer = document.querySelector(".article-container");
 const asideContainer = document.querySelector(".related-articles");
 articleContainer.style.display = "none";
@@ -48,5 +47,5 @@ async function writePosts() {
 async function setupPage() {
   await makeApiCall();
   await writePosts();
-  await setupPage();
 }
+setupPage();
