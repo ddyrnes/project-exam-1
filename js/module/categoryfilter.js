@@ -13,40 +13,26 @@ export function filterCategories() {
   const newsCard = document.querySelectorAll(".News");
   const reviewCard = document.querySelectorAll(".Review");
   const tutorialCard = document.querySelectorAll(".Tutorial");
-  console.log(buttons);
+  // console.log(buttons);
   const allCards = document.querySelectorAll(".all-cards-container a");
-  // console.log(test.dataset.category);
-  // console.log(test);
-  // const test2 = test.getAttribute("data.category");
-  // console.log(test2);
-  // newsCard.forEach(myFunction);
 
-  // function myFunction() {
-  //   newsCard.innerText = "";
-  // }
-  // myFunction();
-  // if ((newsButton.checked = true)) {
-  //   console.log("Hello");
-  // }
-  // if ((allButton.checked = true)) {
-  //   console.log("No");
-  // }
   buttons.forEach((e) => {
     e.addEventListener("change", function (event) {
       let item = event.target.value;
+      // console.log(item);
       if (item == "News") {
         let category = "News";
-        console.log(category);
+        // console.log(category);
         displayCards(category);
       }
       if (item == "Reviews") {
-        let category = "Reviews";
-        console.log(category);
+        let category = "Review";
+        // console.log(category);
         displayCards(category);
       }
       if (item == "Tutorials") {
-        let category = "Tutorials";
-        console.log(category);
+        let category = "Tutorial";
+        // console.log(category);
         displayCards(category);
       }
       if (item == "All") {
@@ -56,7 +42,38 @@ export function filterCategories() {
       }
     });
   });
+  function displayCards(category) {
+    // console.log(category);
+
+    allCards.forEach((e) => {
+      e.style.display = "none";
+      if (e.dataset.category === category) {
+        e.style.display = "flex";
+      }
+      if (category === "All") {
+        e.style.display = "flex";
+      }
+    });
+  }
 }
+
+// console.log(test.dataset.category);
+// console.log(test);
+// const test2 = test.getAttribute("data.category");
+// console.log(test2);
+// newsCard.forEach(myFunction);
+
+// function myFunction() {
+//   newsCard.innerText = "";
+// }
+// myFunction();
+// if ((newsButton.checked = true)) {
+//   console.log("Hello");
+// }
+// if ((allButton.checked = true)) {
+//   console.log("No");
+// }
+
 // console.log(allCards);
 // let filteredCards = allCards.filter(function (e) {
 //   console.log(test);
