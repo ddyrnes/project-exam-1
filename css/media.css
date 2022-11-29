@@ -14,7 +14,6 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
-    padding: 20px 0px;
   }
   main {
     margin-top: 170px;
@@ -67,7 +66,7 @@
     justify-content: center;
   }
   .footer > * {
-    padding: 20px 24px;
+    padding: 20px 20px;
   }
   .footer-line {
     display: none;
@@ -91,8 +90,13 @@
 /* MEDIA > 840 PX  */
 @media (max-width: 840px) {
   main {
-    margin-top: 170px;
+    margin-top: 130px;
     padding: 0;
+  }
+  .cta {
+    width: 240px;
+    height: 44px;
+    font-size: 1.2rem;
   }
   .nav-background-bottom,
   .nav-background-top {
@@ -111,10 +115,9 @@
   .splash-subscribe {
     height: 40vh;
     padding: 10px;
+    width: 100%;
   }
-  .subscribe-submit {
-    width: 150px;
-  }
+
   .latest-articles {
     font-size: 1.8rem;
   }
@@ -174,7 +177,7 @@
     height: 34px;
   }
   .related-articles {
-    max-width: 375px;
+    max-width: 320px;
   }
   .fieldset {
     padding: 10px 20px;
@@ -206,6 +209,6 @@
     align-items: center;
   }
   .footer-subscribe {
-    margin: 20px 180px;
+    margin: 20px 0px;
   }
 }

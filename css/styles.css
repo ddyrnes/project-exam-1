@@ -58,7 +58,7 @@ p {
   text-decoration: none;
 }
 .cta-container {
-  padding: 40px;
+  padding: 40px 0px;
   display: flex;
   justify-content: center;
 }

@@ -85,10 +85,7 @@ main {
   align-items: center;
 }
 
-.cta-container {
-  padding: 40px;
-  justify-content: center;
-}
+
 
 /* Hides modal "button" */
 #modal {
