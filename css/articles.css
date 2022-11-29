@@ -48,6 +48,7 @@
   font-size: 1.1rem;
   color: var(--black);
   background-color: var(--gray);
+  cursor: pointer;
 }
 .category-radio input[type="radio"]:checked + label {
   color: var(--white);
