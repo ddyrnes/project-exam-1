@@ -11,8 +11,14 @@ const displayAllButton = document.querySelector(".display-all-button");
 const displayHeader = document.querySelector(".all-articles");
 const categoryRadio = document.querySelector(".category-radio");
 
-const posts = await makeApiCalls(urlFirstPosts);
+// const posts = await makeApiCalls(urlFirstPosts);
 async function writePosts() {
+  const { data: posts, error } = await makeApiCalls(urlAllPosts);
+
+  if (error) {
+    return errorHandler(error);
+  }
+  // Add if (error) statements to all write posts functions
   cardInnerHtml(posts[0], "all");
   loader.style.display = "none";
   displayAllButton.style.display = "flex";
