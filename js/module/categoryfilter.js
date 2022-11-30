@@ -22,16 +22,13 @@ export function filterCategories() {
       if (item == "News") {
         let category = "News";
         displayCards(category);
-      }
-      if (item == "Reviews") {
+      } else if (item == "Reviews") {
         let category = "Review";
         displayCards(category);
-      }
-      if (item == "Tutorials") {
+      } else if (item == "Tutorials") {
         let category = "Tutorial";
         displayCards(category);
-      }
-      if (item == "All") {
+      } else if (item == "All") {
         let category = "All";
         displayCards(category);
       }
