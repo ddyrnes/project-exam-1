@@ -53,7 +53,4 @@
 .category-radio input[type="radio"]:checked + label {
   color: var(--white);
   background-color: var(--black);
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
 }

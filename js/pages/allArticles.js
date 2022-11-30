@@ -4,6 +4,7 @@ import { urlAllPosts } from "../module/urls.js";
 import { urlFirstPosts } from "../module/urls.js";
 import { urlHomePage } from "../module/urls.js";
 import { filterCategories } from "../module/categoryfilter.js";
+// import { checkRadioButton } from "../module/checkRadioButton.js";
 
 const loader = document.querySelector(".loader");
 const displayAllButton = document.querySelector(".display-all-button");
@@ -29,6 +30,7 @@ displayAll.addEventListener("click", (event) => {
     cardInnerHtml(allPosts[0], "all");
     displayAllButton.style.display = "none";
   }
+  // checkRadioButton();
   writePosts();
   filterCategories();
 });
