@@ -46,6 +46,9 @@ h4 {
   /* font-family: "Oswald Regular", sans-serif;
   font-family: "Oswald Stencil", sans-serif; */
 }
+h1 {
+  font-weight: 600;
+}
 
 h3 {
   font-size: 2rem;

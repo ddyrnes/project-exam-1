@@ -11,9 +11,7 @@
 .all-articles-header p {
   font-size: 1.2rem;
 }
-.articles {
-  margin-top: 40px;
-}
+
 .articles-container {
   padding: 0px;
 }
@@ -29,11 +27,12 @@
   margin: auto;
   width: 100%;
   max-width: 1400px;
-  padding: 10px 40px;
+  padding: 20px 40px;
   display: none;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 40px;
+  justify-content: center;
 }
 .category-radio input[type="radio"] {
   opacity: 0;
