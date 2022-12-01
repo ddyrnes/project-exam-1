@@ -7,16 +7,12 @@ import { makeApiCall } from "../module/api.js";
 import { urlSpecificPage } from "../module/urls.js";
 import { errorHandler } from "../module/errorHandler.js";
 import { removeLoader } from "../module/removeLoader.js";
+import { specificArticleDisplay } from "../module/specificArticleDisplay.js";
+import { getParam } from "../module/getParam.js";
 
-const param = new URLSearchParams(window.location.search);
-const id = param.get("id");
-const newUrl = specificUrl + id + "?_embed";
+const { newUrl, id } = getParam(specificUrl);
+
 let categoryNumber;
-const articleContainer = document.querySelector(".article-container");
-const asideContainer = document.querySelector(".related-articles");
-articleContainer.style.display = "none";
-asideContainer.style.display = "none";
-
 async function writePost() {
   const { data, error } = await makeApiCall(newUrl);
   if (error) {
@@ -46,7 +42,6 @@ async function setupPage() {
   await writePost();
   await writePosts();
   removeLoader();
-  articleContainer.style.display = "block";
-  asideContainer.style.display = "flex";
+  specificArticleDisplay();
 }
 setupPage();

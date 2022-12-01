@@ -1,4 +1,5 @@
 export function errorHandler(error) {
+  console.log(error);
   const loader = document.querySelector(".loader");
   const loaderInside = document.querySelector(".loader-inside");
   const loaderBox = document.querySelectorAll(".loader-box");
@@ -15,5 +16,4 @@ export function errorHandler(error) {
 </div>
 <div>
 `;
-  console.log("hi, it's me again");
 }

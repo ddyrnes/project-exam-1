@@ -25,6 +25,7 @@ main {
 }
 
 .article-container {
+  display: none;
   max-width: 900px;
   padding-bottom: 60px;
   background-color: var(--white);
@@ -81,6 +82,7 @@ main {
 /* Related Articles Testing  */
 
 .related-articles {
+  display: none;
   gap: 40px;
   margin-left: 1px;
   max-width: 539px;
