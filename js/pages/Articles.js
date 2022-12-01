@@ -8,6 +8,8 @@ import { errorHandler } from "../module/errorHandler.js";
 import { removeLoader } from "../module/removeLoader.js";
 import { articlesDisplay } from "../module/articlesDisplay.js";
 
+const displayAllButton = document.querySelector(".display-all-button");
+
 async function writePost() {
   const { data, error } = await makeApiCalls(urlFirstPosts);
 

@@ -6,21 +6,16 @@ import { errorHandler } from "../module/errorHandler.js";
 import { removeLoader } from "../module/removeLoader.js";
 import { indexDisplay } from "../module/indexDisplay.js";
 
-// const labels = ["carousel", "review", "tutorial", "news"];
-// console.log(labels);
+const categoryNames = ["carousel", "review", "tutorial", "news"];
+
 async function writePosts() {
   const { data, error } = await makeApiCalls(urlHomePage);
   if (error) {
     return errorHandler(error);
   }
-  console.log(data);
-  cardInnerHtml(data[0], "carousel");
-  cardInnerHtml(data[1], "review");
-  cardInnerHtml(data[2], "tutorial");
-  cardInnerHtml(data[3], "news");
+  categoryNames.map((categoryNames, index) => cardInnerHtml(data[index], categoryNames));
   removeLoader();
   indexDisplay();
-  // "text" adds correct classes to pair with the posts categories
   carousel();
 }
 writePosts();

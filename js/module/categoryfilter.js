@@ -17,23 +17,29 @@ export function filterCategories() {
   }
 
   buttons.forEach((e) => {
-    e.addEventListener("change", function (event) {
-      let item = event.target.value;
-      if (item == "News") {
-        let category = "News";
-        displayCards(category);
-      } else if (item == "Reviews") {
-        let category = "Review";
-        displayCards(category);
-      } else if (item == "Tutorials") {
-        let category = "Tutorial";
-        displayCards(category);
-      } else if (item == "All") {
-        let category = "All";
-        displayCards(category);
-      }
+    e.addEventListener("input", function (event) {
+      const categoryName = event.target.value;
+      displayCards(categoryName);
     });
   });
+  // buttons.forEach((e) => {
+  //   e.addEventListener("change", function (event) {
+  //     let item = event.target.value;
+  //     if (item == "News") {
+  //       let category = "News";
+  //       displayCards(category);
+  //     } else if (item == "Reviews") {
+  //       let category = "Review";
+  //       displayCards(category);
+  //     } else if (item == "Tutorials") {
+  //       let category = "Tutorial";
+  //       displayCards(category);
+  //     } else if (item == "All") {
+  //       let category = "All";
+  //       displayCards(category);
+  //     }
+  //   });
+  // });
 
   function displayCards(category) {
     allCards.forEach((e) => {
