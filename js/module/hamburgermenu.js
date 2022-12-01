@@ -27,3 +27,7 @@ window.onscroll = function () {
   }
   scrollPosition = updatedScrollPosition;
 };
+
+// postTags.toLowerCase().startsWith("latest")
+// postTags.toLowerCase().startsWith("popular")
+// function loader display none

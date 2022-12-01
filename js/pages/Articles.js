@@ -5,11 +5,8 @@ import { urlFirstPosts } from "../module/urls.js";
 import { urlHomePage } from "../module/urls.js";
 import { filterCategories } from "../module/categoryfilter.js";
 import { errorHandler } from "../module/errorHandler.js";
-
-const loader = document.querySelector(".loader");
-const displayAllButton = document.querySelector(".display-all-button");
-const displayHeader = document.querySelector(".all-articles");
-const categoryRadio = document.querySelector(".category-radio");
+import { removeLoader } from "../module/removeLoader.js";
+import { articlesDisplay } from "../module/articlesDisplay.js";
 
 async function writePost() {
   const { data, error } = await makeApiCalls(urlFirstPosts);
@@ -18,10 +15,8 @@ async function writePost() {
     return errorHandler(error);
   }
   cardInnerHtml(data[0], "all");
-  loader.style.display = "none";
-  displayAllButton.style.display = "flex";
-  displayHeader.style.display = "flex";
-  categoryRadio.style.display = "flex";
+  removeLoader();
+  articlesDisplay();
   filterCategories();
 }
 writePost();

@@ -6,7 +6,8 @@ import { makeApiCalls } from "../module/api.js";
 import { makeApiCall } from "../module/api.js";
 import { urlSpecificPage } from "../module/urls.js";
 import { errorHandler } from "../module/errorHandler.js";
-const loader = document.querySelector(".loader");
+import { removeLoader } from "../module/removeLoader.js";
+
 const param = new URLSearchParams(window.location.search);
 const id = param.get("id");
 const newUrl = specificUrl + id + "?_embed";
@@ -19,10 +20,10 @@ asideContainer.style.display = "none";
 async function writePost() {
   const { data, error } = await makeApiCall(newUrl);
   if (error) {
-    console.log("Error");
-    errorHandler(error);
+    return errorHandler(error);
   }
   createSpecificArticle(data);
+
   if (data.categories[0] === 17) {
     return (categoryNumber = 1);
   } else if (data.categories[0] === 18) {
@@ -44,7 +45,7 @@ async function writePosts() {
 async function setupPage() {
   await writePost();
   await writePosts();
-  loader.style.display = "none";
+  removeLoader();
   articleContainer.style.display = "block";
   asideContainer.style.display = "flex";
 }
