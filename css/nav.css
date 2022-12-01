@@ -70,11 +70,14 @@ footer {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
+.nav-menu {
+  gap: 40px;
+}
 .nav-menu > * {
   height: 50px;
   color: var(--white);
   text-decoration: none;
-  padding: 0px 32px;
+  /* padding: 0px 32px; */
   font-family: "Oswald", sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -92,8 +95,13 @@ footer {
 }
 .nav-menu.active {
   display: flex;
+  gap: 0px;
+  padding-bottom: 20px;
 }
-
+.nav-menu.active a {
+  height: 80px;
+  line-height: 80px;
+}
 .hamburger-toggle {
   flex-direction: column;
   justify-content: space-between;

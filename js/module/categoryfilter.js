@@ -34,6 +34,7 @@ export function filterCategories() {
       }
     });
   });
+
   function displayCards(category) {
     allCards.forEach((e) => {
       e.style.display = "none";

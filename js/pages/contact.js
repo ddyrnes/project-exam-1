@@ -8,6 +8,7 @@ contactForm.addEventListener("submit", function (e) {
   const msg = contactForm.message.value;
   contactForm.style.display = "none";
   formSuccess.style.display = "flex";
+
   formSuccess.innerHTML = `
   <div class="success-icon"> &#10003; </div>
   <h3 class="form-success-p">Thank you ${name} for your feedback!</h3>

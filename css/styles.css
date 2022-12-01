@@ -14,6 +14,7 @@
   --black: #020501;
   --blue: #1e73be;
   --blue-link: #2200cc;
+  --red: #ff0033;
   --placeholder: rgba(2, 5, 1, 0.65);
 }
 
@@ -142,4 +143,26 @@ p {
 .subscribe-email:focus {
   z-index: 1;
   outline: 2px solid var(--black);
+}
+.error-container {
+  align-items: center;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  width: 340px;
+  padding: 30px;
+  margin: 10px;
+}
+.error-icon {
+  font-size: 4rem;
+  border: 6px solid var(--red);
+  color: var(--red);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.error-text {
+  width: 300px;
+  padding: 10px;
 }

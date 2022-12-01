@@ -41,3 +41,15 @@ export async function makeApiCalls(urls) {
   }
   return { data, error };
 }
+export async function makeApiCall(newUrl) {
+  let data;
+  let error;
+  try {
+    const response = await fetch(newUrl);
+    data = await response.json();
+  } catch (err) {
+    error = err;
+  }
+
+  return { data, error };
+}
