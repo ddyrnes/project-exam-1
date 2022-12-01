@@ -5,8 +5,14 @@ toggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
+addEventListener("resize", () => {
+  if (window.innerWidth > 1200) {
+    navMenu.classList.remove("active");
+  }
+});
+// Removes active hamburger menu if window is resized above 1200px (caused issues with menu)
+
 const navBarSticky = document.getElementsByClassName("nav-background-bottom")[0];
-// const navBarSticky = document.querySelector("nav");
 let navBarTop = navBarSticky.offsetTop;
 function navbartop() {
   if (window.scrollY >= navBarTop && window.innerWidth <= 1200) {
@@ -27,7 +33,3 @@ window.onscroll = function () {
   }
   scrollPosition = updatedScrollPosition;
 };
-
-// postTags.toLowerCase().startsWith("latest")
-// postTags.toLowerCase().startsWith("popular")
-// function loader display none
