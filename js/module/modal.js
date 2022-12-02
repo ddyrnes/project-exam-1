@@ -15,6 +15,7 @@ export async function modal() {
     figure.addEventListener("click", (e) => {
       modalRoot.classList.add("visible");
       document.querySelector("#modal-img").src = e.target.src;
+      document.querySelector("#modal-img").alt = e.target.alt;
       document.querySelector("#modal-figcap").innerHTML = e.target.alt;
     });
   });
