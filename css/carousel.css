@@ -32,7 +32,7 @@
 .carousel-button:hover {
   color: var(--white);
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 5rem;
+  padding: 0px 14px;
 }
 .carousel-button:focus {
   border-radius: 8px;

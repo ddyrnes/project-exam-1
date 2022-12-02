@@ -16,7 +16,7 @@
   padding: 0px;
 }
 .display-all-button {
-  display: none;
+  display: flex;
   height: 100px;
   justify-content: center;
 }

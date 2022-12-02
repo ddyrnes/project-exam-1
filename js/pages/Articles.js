@@ -9,6 +9,7 @@ import { removeLoader } from "../module/removeLoader.js";
 import { articlesDisplay } from "../module/articlesDisplay.js";
 
 const displayAllButton = document.querySelector(".display-all-button");
+displayAllButton.style.display = "flex";
 
 async function writePost() {
   const { data, error } = await makeApiCalls(urlFirstPosts);
