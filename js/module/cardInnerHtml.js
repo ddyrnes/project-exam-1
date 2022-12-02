@@ -2,6 +2,9 @@ export function cardInnerHtml(apiResults, review) {
   for (let i = 0; i < apiResults.length; i++) {
     if (arguments[2] == apiResults[i].id) {
       continue;
+    }
+    if (document.querySelectorAll(".related-cards-container a").length > 2) {
+      continue;
     } else {
       let newDate = new Date(apiResults[i].date);
       let year = newDate.getFullYear();
