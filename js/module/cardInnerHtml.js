@@ -21,7 +21,9 @@ export function cardInnerHtml(apiResults, review) {
           <a href="specific-article.html?id=${apiResults[i].id}" class="card flex-col carousel-card"data-category="${
         apiResults[i]._embedded["wp:term"][0][0].name
       }" >
-          <img src="${apiResults[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+          <img src="${apiResults[i]._embedded["wp:featuredmedia"]["0"].source_url}" alt="${
+        apiResults[i]._embedded["wp:featuredmedia"]["0"].alt_text
+      }">
           <div class="card-category ${apiResults[i]._embedded["wp:term"][0][0].name}"><p>${
         apiResults[i]._embedded["wp:term"][0][0].name
       }
