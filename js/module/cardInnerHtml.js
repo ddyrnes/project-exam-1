@@ -5,6 +5,7 @@ export function cardInnerHtml(apiResults, review) {
     }
     if (document.querySelectorAll(".related-cards-container a").length > 2) {
       continue;
+      // Displays a maximum of 3 related articles on page
     } else {
       let newDate = new Date(apiResults[i].date);
       let year = newDate.getFullYear();

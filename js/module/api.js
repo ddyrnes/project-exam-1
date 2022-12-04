@@ -7,11 +7,12 @@ export async function makeApiCalls(urls) {
     const promises = results.map((response) => response.json());
     data = await Promise.all(promises);
   } catch (err) {
-    console.log(error);
     error = err;
   }
   return { data, error };
 }
+// Makes several API calls
+
 export async function makeApiCall(newUrl) {
   let data;
   let error;
@@ -24,3 +25,4 @@ export async function makeApiCall(newUrl) {
 
   return { data, error };
 }
+// Single API call

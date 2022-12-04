@@ -4,9 +4,10 @@
   overflow: hidden;
   background-color: var(--gray);
   width: 1200px;
-  /* breakpoints: 1 card 480px, 2 cards 840px, 3cards 1200px*/
   border-radius: 8px;
 }
+/* Carousel breakpoints: 1 card 480px, 2 cards 840px, 3cards 1200px*/
+
 .carousel-container {
   gap: 40px;
   width: 100%;
@@ -30,8 +31,7 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 .carousel-button:hover {
-  color: var(--white);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0px 14px;
 }
 .carousel-button:focus {

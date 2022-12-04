@@ -13,7 +13,9 @@ export const urlSpecificPage = [
   url + "4" + urlCategory + "18",
   url + "4" + urlCategory + "19",
 ];
-// Categories: Reviews = 17, Tutorials = 18, News = 19
+// First number is X amount of posts
+// Second number is categories: Reviews = 17, Tutorials = 18, News = 19
+
 export const urlFirstPosts = [url + "10"];
 
 export const urlAllPosts = [url + "100"];

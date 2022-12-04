@@ -10,7 +10,8 @@ addEventListener("resize", () => {
     navMenu.classList.remove("active");
   }
 });
-// Removes active hamburger menu if window is resized above 1200px (caused issues with menu)
+// Removes active hamburger menu if window is resized above 1200px
+// Caused issues with menu if a user was resizing the window while the hamburger menu was active
 
 const navBarSticky = document.getElementsByClassName("nav-background-bottom")[0];
 let navBarTop = navBarSticky.offsetTop;

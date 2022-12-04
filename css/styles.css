@@ -7,9 +7,7 @@
   --white: #ffffff;
   --light-blue: #a4cff5;
   --green: #4b850f;
-  /* --green: #508810; */
   --forest-green: #21837c;
-  /* --forest-green: #27998a; */
   --gray: #d1d1d1;
   --light-gray: #eaeaea;
   --dark-gray: #515151;
@@ -25,12 +23,6 @@
 *::after {
   box-sizing: border-box;
 }
-
-/* Regular button
-background: linear-gradient(32.38deg, #0830b6 13.43%, #2178d6 86.72%);
-:hover
-background: linear-gradient(32.38deg, #0639dc 13.43%, #298ffe 86.72%); */
-
 body {
   margin: 0px;
   font-family: "Trebuchet MS", sans-serif;
@@ -46,13 +38,10 @@ h2,
 h3,
 h4 {
   font-family: "Oswald", sans-serif;
-  /* font-family: "Oswald Regular", sans-serif;
-  font-family: "Oswald Stencil", sans-serif; */
 }
 h1 {
   font-weight: 600;
 }
-
 h3 {
   font-size: 2rem;
 }
