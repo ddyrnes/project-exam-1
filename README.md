@@ -1,6 +1,6 @@
 # GameOn Blog
 
-![Screenshot](community-science-museum_screenshot.jpg)
+![Screenshot](gameon-blog_screenshot.jpg)
 
 A blog designated to gaming news, reviews and tutorials
 
